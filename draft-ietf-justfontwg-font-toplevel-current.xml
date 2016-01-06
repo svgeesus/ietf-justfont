@@ -384,10 +384,9 @@
 
     <t hangText="Interoperability considerations:">None. </t>
 
-    <t hangText="Published specification:">This media type registration is extracted from the <eref target="http://www.w3.org/TR/WOFF">WOFF specification</eref>
+    <t hangText="Published specification:">This media type registration updates the <eref target="http://www.w3.org/TR/WOFF">WOFF specification</eref>
       at W3C.</t>
-      <!-- except it is not, the WOFF 1.0 spec has the old application/font-woff registration.
-      Instead, this should say that it updates that document. Also, we should errata WOFF 1.0
+      <!-- Also, we should errata WOFF 1.0
       to note that the registration has been changed. -->
 
     <t hangText="Applications that use this media type:">WOFF is used by Web browsers, often
