@@ -1,6 +1,8 @@
 # ietf-justfont
 Editor's draft for IETF justfont working group
 
+IETF tracker https://datatracker.ietf.org/doc/draft-ietf-justfont-toplevel/
+
 ##Charter
 
 Chairs:
