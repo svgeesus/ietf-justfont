@@ -121,6 +121,10 @@
       include e.g. checksums and digital signatures), font data formats provide neither privacy nor
       confidentiality protection internally; if needed, such protection should be provided externally.</t>
   </section>
+  <section title="IANA Considerations ">
+  <t>This specification requires IANA to modify the rules for the existing Internet Media Types 
+  registry by adding a new font top-level type in the standards tree.</t>
+  </section>
 <section title="Definition and encoding">
     <t>The "font" as the primary media content type indicates that the content identified by it requires
       certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping
