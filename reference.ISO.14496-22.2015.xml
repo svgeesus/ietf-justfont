@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE reference SYSTEM "rfc2629.dtd">
+
+<reference anchor="ISO.14496-22.2015" target="http://standards.iso.org/ittf/PubliclyAvailableStandards/c066391_ISO_IEC_14496-22_2015.zip">
+<front>
+<title>Coding of audio-visual objects Part 22: Open Font Format</title>
+<author>
+<organization>International Organization for Standardization</organization>
+</author>
+<date month="10" year="2015" />
+<abstract><t>ISO/IEC 14496-22:2015 specifies the Open Font Format (OFF) specification, the TrueType™ and Compact Font Format (CFF) outline formats, and the TrueType hinting language. Many references to both TrueType and PostScript exist throughout this document, as Open Font Format fonts combine the two technologies</t></abstract>
+</front>
+
+<seriesInfo name="ISO" value="Standard 14496-22" />
+
+</reference>
