@@ -51,6 +51,10 @@
       "Courier" (the name of a popular font) but perhaps "TTF", "OTF" or "SFNT" (the names of
       commonly used TrueType and OpenType font formats as well as their higher-level wrapper
       format).</t>
+      <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+      NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
+      "OPTIONAL" in this document are to be interpreted as described in
+      RFC 2119 <xref target="RFC2119"/>.</t>
 </section>
 <section title="Background and Justification">
     <t>Historically there has not been a registration of formats for fonts. Most recently, there
