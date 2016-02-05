@@ -163,7 +163,7 @@
     <t hangText="2) Name: Layout"></t>
     <t>Value: OTF, AAT, SIL <vspace blankLines="1" />
       This parameter identifies the type of implemented support for advanced text layout
-      features. The predefined values "OTF", "AAT" and " SIL" respectively indicate support
+      features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
       shaping and layout mechanism may be supported by the same font file, therefore,
       multiple values for the same optional parameter may be defined.</t>
