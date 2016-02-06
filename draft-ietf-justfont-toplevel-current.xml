@@ -348,8 +348,9 @@
       <t hangText="Magic number(s):">The TrueType fonts and OFF / OpenType fonts containing
       TrueType outlines should use 0x00010000
         as the 'sfnt' version number.<vspace blankLines="1" />
-      The OFF / OpenType fonts containing CFF data should use the tag 'OTTO' as 'sfnt' version number.</t>
-      <!-- magic number for SVG outlines? More info on allowed combinations (or pointer to it)? -->
+      The OFF / OpenType fonts containing CFF outlines should use the tag 'OTTO' as 'sfnt' version number.
+      There is no magic number for SVG outlines; these are always accompanied by either TrueType or CFF
+      outlines and thus use the corresponding magic number.</t>
 
       <t hangText="File extension(s):">Font file extensions used for OFF /
       OpenType fonts: .ttf, .otf<vspace blankLines="1" />
