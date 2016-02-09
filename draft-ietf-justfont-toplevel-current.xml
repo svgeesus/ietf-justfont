@@ -387,6 +387,87 @@
   </list>
   </t>
   </section>
+  
+  <section title="OTF font type">
+  <t>
+  <list style="hanging">
+    <t hangText="Type name:">font</t>
+
+    <t hangText="Subtype name:">collection</t>
+
+    <t hangText="Required parameters:">None.</t>
+
+  <t hangText="Optional parameters">
+  <list style="hanging">
+
+    <t hangText="Name: Outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
+
+    This parameter can be used to specify the type of outlines supported by the font.
+      Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
+      format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
+      and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
+      or SVG outlines can be present in various combinations in the same font file, therefore,
+      this optional parameter is a list one one or more items, separated by commas, with 
+      optional whitespace. Order in the list is not significant.</t>
+   </list>
+   </t>
+
+   <t hangText="Encoding considerations:">Binary.</t>
+
+    <t hangText="Interoperability considerations:">As it was noted in the first paragraph
+    of the "Security considerations" section, the
+      same font format can be used to encode fonts with different types of glyph data represented
+      as either TrueType, PostScript (CFF) or SVG outlines. Existing font rendering engines
+      may not be able to process some of the particular outline formats, and downloading a font
+      resource that contains unsupported glyph data format would result in inability of application
+      to render and display text. Therefore, it would be extremely useful to clearly identify
+      the format of the glyph outline data within a font using an optional parameter, and
+      allow applications to make decisions about downloading a particular font resource sooner.
+      Please note that as new outline formats may be defined in the future, the set of allowed
+      values for the optional parameter defined in this section may be extended.</t>
+
+    <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
+    specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
+
+    <t hangText="Applications that use this media type:">Any and all applications that are able
+    to create, edit or display textual media content.</t>
+
+  <t hangText="Additional information:">
+
+  <list style="hanging">
+
+      <t hangText="Magic number(s):">The TrueType fonts and OFF / OpenType fonts containing
+      TrueType outlines should use 0x00010000
+        as the 'sfnt' version number.<vspace blankLines="1" />
+      The OFF / OpenType fonts containing CFF outlines should use the tag 'OTTO' as 'sfnt' version number.
+      There is no magic number for SVG outlines; these are always accompanied by either TrueType or CFF
+      outlines and thus use the corresponding magic number.</t>
+
+      <t hangText="File extension(s):">Font file extensions used for OFF /
+      TrueType and OpenType fonts: .ttc </t>
+
+    <t hangText="Macintosh file type code(s):">(no code specified)</t>
+    <t hangText="@font-face Format:">collection</t>
+    <t hangText="Fragment Identifiers">A positive integer. For example, #2 refers to the second font 
+    in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font 
+    in the collection.</t>
+  </list>
+  </t>
+
+    <t hangText="Person &amp; email address to contact for further information:">Vladimir Levantovsky (vladimir.levantovsky@monotype.com).</t>
+
+    <t hangText="Intended usage:">COMMON</t>
+
+    <t hangText="Restrictions on usage:">None</t>
+
+    <t hangText="Author:">The ISO/IEC 14496-22 "Open Font Format" specification is a product
+    of the ISO/IEC JTC1 SC29/WG11.</t>
+
+    <t hangText="Change controller:">The ISO/IEC has change control over this specification.</t>
+
+  </list>
+  </t>
+  </section>
 
 
   <section title="WOFF 1.0">
@@ -475,7 +556,11 @@
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3c.woff2</spanx> </t>
     <t hangText="@font-face Format:">woff2</t>
-    <t hangText="Fragment Identifiers">none.</t>
+    <t hangText="Fragment Identifiers">Optional, for collections encoded as WOFF 2.0. A positive integer. 
+    For example, #2 refers to the second font 
+    in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font 
+    in the collection (or the only font, if it is not a collection). If a fragment is specified, and 
+    the WOFF does not encode a collection, the fragment is ignored.</t>
   </list>
   </t>
 
