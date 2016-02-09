@@ -164,7 +164,8 @@
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
       and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
-      multiple values for the same optional parameter may be defined.</t>
+      this optional parameter is a list one one or more items, separated by commas, with 
+      optional whitespace. Order in the list is not significant.</t>
 
     <t hangText="2) Name: Layout"></t>
     <t>Value: OTL, AAT, SIL <vspace blankLines="1" />
@@ -172,7 +173,8 @@
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
       shaping and layout mechanism may be supported by the same font file, therefore,
-      multiple values for the same optional parameter may be defined.</t>
+      this optional parameter is a list one one or more items, separated by commas, with 
+      optional whitespace. Order in the list is not significant.</t>
    </list></t>
 
    <t hangText="Encoding considerations:">Binary.</t>
