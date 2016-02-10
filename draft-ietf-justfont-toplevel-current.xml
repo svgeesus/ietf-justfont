@@ -32,8 +32,8 @@
 
 <section title="Specification development" anchor="issues">
 	<t>This section is non-normative. The source for this specification is 
-	<eref target="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</a>. The <eref target="https://github.com/svgeesus/ietf-justfont/issues">issues list</eref> is also on GitHub.
-	Discussion should be on the mailing list <eref="mailto:justfont@ietf.org"/>justfont@ietf.org</eref>.</t>
+	<eref target="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</eref>. The <eref target="https://github.com/svgeesus/ietf-justfont/issues">issues list</eref> is also on GitHub.
+	Discussion should be on the mailing list <eref target="mailto:justfont@ietf.org"/>justfont@ietf.org</eref>.</t>
 </section>
 
 <section title="Introduction" anchor="intro">
