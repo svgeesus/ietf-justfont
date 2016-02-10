@@ -562,7 +562,7 @@ Lilley                   Expires August 13, 2016               [Page 10]
 Internet-Draft           The font Top Level Type           February 2016
 
 
-7.4.  OTF font type
+7.4.  Collection font type
 
    Type name:  font
 
@@ -821,12 +821,12 @@ Internet-Draft           The font Top Level Type           February 2016
 8.2.  Informative References
 
    [HTTP-Archive-Trends]
-              Kuetell, d., "HTTP Archive trend analysis", March 2015,
+              Kuetell, D., "HTTP Archive trend analysis", March 2015,
               <http://httparchive.org/trends.php?s=All&minlabel=Nov+15+2
               010&maxlabel=Feb+15+2015#perFonts>.
 
    [Font-Media-Type-Analysis]
-              Kuetell, d., "Web Font Media Type (mime type) Analysis
+              Kuetell, D., "Web Font Media Type (mime type) Analysis
               2015", 2015, <http://goo.gl/zbDhUN>.
 
 8.3.  URIs

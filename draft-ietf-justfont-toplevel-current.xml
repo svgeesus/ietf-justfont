@@ -648,7 +648,7 @@
         target="http://httparchive.org/trends.php?s=All&amp;minlabel=Nov+15+2010&amp;maxlabel=Feb+15+2015#perFonts">
     		<front>
     			<title>HTTP Archive trend analysis</title>
-          <author initials="d." surname="Kuetell" fullname="David Kuetell"><organization/></author>
+          <author initials="D." surname="Kuetell" fullname="David Kuetell"><organization/></author>
     			<date month="March" year="2015"/>
     			<abstract><t>
     			Analysis of the Alexa top 480K websites, from Nov 15 2010 to
@@ -660,7 +660,7 @@
     	<reference anchor="Font-Media-Type-Analysis" target="http://goo.gl/zbDhUN">
     		<front>
     			<title>Web Font Media Type (mime type) Analysis 2015</title>
-          <author initials="d." surname="Kuetell" fullname="David Kuetell"><organization/></author>
+          <author initials="D." surname="Kuetell" fullname="David Kuetell"><organization/></author>
     			<date year="2015"/>
     			<abstract><t>
     			Adoption rate of registered media types for TrueType, OpenType and WOFF
