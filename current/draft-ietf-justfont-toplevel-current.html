@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>The font Top Level Type </title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents"/>
+<link href="#rfc.section.1" rel="Chapter" title="1 Specification development"/>
+<link href="#rfc.section.2" rel="Chapter" title="2 Introduction"/>
+<link href="#rfc.section.3" rel="Chapter" title="3 Background and Justification"/>
+<link href="#rfc.section.4" rel="Chapter" title="4 Security considerations"/>
+<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations"/>
+<link href="#rfc.section.6" rel="Chapter" title="6 Definition and encoding"/>
+<link href="#rfc.section.7" rel="Chapter" title="7 Defined subtypes"/>
+<link href="#rfc.section.7.1" rel="Chapter" title="7.1 Generic SFNT font type"/>
+<link href="#rfc.section.7.2" rel="Chapter" title="7.2 TTF font type"/>
+<link href="#rfc.section.7.3" rel="Chapter" title="7.3 OTF font type"/>
+<link href="#rfc.section.7.4" rel="Chapter" title="7.4 OTF font type"/>
+<link href="#rfc.section.7.5" rel="Chapter" title="7.5 WOFF 1.0"/>
+<link href="#rfc.section.7.6" rel="Chapter" title="7.6 WOFF 2.0"/>
+<link href="#rfc.references" rel="Chapter" title="8 References"/>
+<link href="#rfc.references.1" rel="Chapter" title="8.1 Normative References"/>
+<link href="#rfc.references.2" rel="Chapter" title="8.2 Informative References"/>
+<link href="#rfc.authors" rel="Chapter"/>
+
+
+  <meta name="generator" content="xml2rfc version 2.5.1.dev0 - http://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Lilley, C." />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-justfont-toplevel-current" />
+  <meta name="dct.issued" scheme="ISO8601" content="2016-2-10" />
+  <meta name="dct.abstract" content="This memo serves to register and document the " />
+  <meta name="description" content="This memo serves to register and document the " />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+  <td class="left">Network Working Group</td>
+  <td class="right">C. Lilley</td>
+</tr>
+<tr>
+  <td class="left">Internet-Draft</td>
+  <td class="right">W3C</td>
+</tr>
+<tr>
+  <td class="left">Intended status: Standards Track</td>
+  <td class="right">February 10, 2016</td>
+</tr>
+<tr>
+  <td class="left">Expires: August 13, 2016</td>
+  <td class="right"></td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">The font Top Level Type <br />
+  <span class="filename">draft-ietf-justfont-toplevel-current</span></p>
+  
+  <h1 id="rfc.abstract">
+  <a href="#rfc.abstract">Abstract</a>
+</h1>
+<p>This memo serves to register and document the <samp>font</samp> Top Level Type, under which the Internet Media subtypes for representation formats for fonts may be registered. This document also serves as a registration application for a set of intended subtypes, which are representative of some existing subtypes already registered under the "application" tree by their separate registrations.  </p>
+<h1 id="rfc.status">
+  <a href="#rfc.status">Status of This Memo</a>
+</h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on August 13, 2016.</p>
+<h1 id="rfc.copyrightnotice">
+  <a href="#rfc.copyrightnotice">Copyright Notice</a>
+</h1>
+<p>Copyright (c) 2016 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+<h1 id="rfc.section.1"><a href="#rfc.section.1">1.</a> <a href="#issues" id="issues">Specification development</a></h1>
+<p id="rfc.section.1.p.1">This section is non-normative. The source for this specification is <a href="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</a>.  The <a href="https://github.com/svgeesus/ietf-justfont/issues">issues list</a> is also on GitHub.  Discussion should be on the mailing list <a href="mailto:justfont@ietf.org">justfont@ietf.org</a>.  </p>
+<h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> <a href="#intro" id="intro">Introduction</a></h1>
+<p id="rfc.section.2.p.1">The process of setting type in computer systems and other forms of text presentation systems uses fonts in order to provide visual representations of the glyphs. Just as with images, for example, there are a number of ways to represent the visual information of the glyphs. Early font formats often used bitmaps, as these could have been carefully tuned for maximum readability at a given size on low-resolution displays. More recently, scalable vector outline fonts have come into widespread use: in these fonts, the outlines of the glyphs are described, and the presentation system renders the outline in the desired position and size.</p>
+<p id="rfc.section.2.p.2">This document defines a top-level Internet Media Type type "font" under which different representation formats of fonts may be registered (e.g. a bitmap or outline formats).  It should be emphasized that, just as under the "image" top-level type one does not find registration for a specific image, for example, "The Night-watch" (by Rembrandt) but instead "JPEG" (a compressed image data representation format), so, under "font" one will not find "Courier" (the name of a popular font) but perhaps "TTF", "OTF" or "SFNT" (the names of commonly used TrueType and OpenType font formats as well as their higher-level wrapper format).</p>
+<p id="rfc.section.2.p.3">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 <a href="#RFC2119">[RFC2119]</a>.</p>
+<h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> Background and Justification</h1>
+<p id="rfc.section.3.p.1">Historically there has not been a registration of formats for fonts. Most recently, there have been several representation formats registered as MIME subtypes under the "application" top-level type.  However, with the rapid adoption of web fonts (based on the data from HTTP Archive <a href="#HTTP-Archive-Trends">[HTTP-Archive-Trends]</a> showing a huge increase in web font usage from 1% in the end of 2010 to 50% across all sites in the beginning of 2015) custom fonts on the web have become a core web resource. As the in-depth analysis <a href="#Font-Media-Type-Analysis">[Font-Media-Type-Analysis]</a> shows, the lack of the intuitive top-level font type is causing significant confusion among developers - while currently defined font subtypes are severely under-utilized there are many more sites that already use non-existent (but highly intuitive) media types such as "font/woff", "font/ttf" and "font/truetype". At the same time, the majority of sites resort to using generic types such as "application/octet-stream", "text/plain" and "text/html"; or use unregistrable types such as "application/x-font-ttf".</p>
+<p id="rfc.section.3.p.2">Contrary to our expectations, the officially defined IANA subtypes such as "application/font-woff" and "application/font-sfnt" see a very limited use - their adoption rates trail far behind as the actual use of web fonts continues to increase. The members of the W3C WebFonts WG believe the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated (correctly) with great caution with respect to viruses and other active code. Secondly, the lack of a top-level type means that there is no opportunity to have a common set of optional attributes, such as are specified here. Third, fonts have a unique set of licensing and usage restrictions, which makes it worthwhile to identify this general category with a unique top-level type.</p>
+<p id="rfc.section.3.p.3">The W3C WebFonts WG believes that the situation can be significantly improved if a set of font media types is registered using "font" as a dedicated top-level type. Based on the data analysis presented above, we believe that it is the presence of simple and highly intuitive media types for images that caused the widespread adoption of IANA's recommendations, where the correct usage of existing media types reaches over 97% for all subtypes in the "image" tree. The WG believes that, considering a rapid adoption of fonts on the web, the registration of the top-level media type for fonts along with the intuitive set of subtypes that reflect popular and widely used data formats would further stimulate the adoption of web fonts, significantly simplify web server configuration process and facilitate the proper use of IANA media type recommendations.</p>
+<h1 id="rfc.section.4"><a href="#rfc.section.4">4.</a> Security considerations</h1>
+<p id="rfc.section.4.p.1">Fonts are interpreted data structures that represent collections of different tables containing data that represent different types of information, including glyph outlines in various formats, hinting instructions, metrics and layout information for multiple languages and writing systems, rules for glyph substitution and positioning, etc. Depending on the format used to represent the glyph data the font may contain TrueType, PostScript or SVG outlines and their respective hint instructions, where applicable. There are many existing, already standardized font table tags and formats that allow an unspecified number of entries containing predefined data fields for storage of variable length binary data. Many existing (TrueType, OpenType and OFF, SIL Graphite, WOFF, etc.) font formats are based on the table-based SFNT (scalable font) format which is extremely flexible, highly extensible and offers an opportunity to introduce additional table structures when needed, in a way that would not affect existing font rendering engines and text layout implementations.  However, this very extensibility may present specific security concerns &#8211; the flexibility and ease of adding new data structures makes it easy for any arbitrary data to be hidden inside a font file.  There is a significant risk that the flexibility of font data structures may be exploited to hide malicious binary content disguised as a font data component.</p>
+<p id="rfc.section.4.p.2">Fonts may contain 'hints', which are programmatic instructions that are executed by the font engine for the alignment of graphical elements of glyph outlines with the target display pixel grid.  Depending on the font technology utilized in the creation of a font these hints may represent active code interpreted and executed by the font rasterizer. Even though hints operate within the confines of the glyph outline conversion system and have no access outside the font rendering engine, hint instructions can be, however, quite complex, and a maliciously designed complex font could cause undue resource consumption (e.g. memory or CPU cycles) on a machine interpreting it. Indeed, fonts are sufficiently complex, and most (if not all) interpreters cannot be completely protected from malicious fonts without undue performance penalties.</p>
+<p id="rfc.section.4.p.3">Widespread use of fonts as necessary component of visual content presentation warrants that a careful attention should be given to security considerations whenever a font is either embedded into an electronic document or transmitted alongside media content as a linked resource. While many existing font formats provide certain levels of protection of data integrity (such mechanisms include e.g. checksums and digital signatures), font data formats provide neither privacy nor confidentiality protection internally; if needed, such protection should be provided externally.</p>
+<h1 id="rfc.section.5"><a href="#rfc.section.5">5.</a> IANA Considerations </h1>
+<p id="rfc.section.5.p.1">This specification requires IANA to modify the rules for the existing Internet Media Types registry by adding a new font top-level type in the standards tree.</p>
+<h1 id="rfc.section.6"><a href="#rfc.section.6">6.</a> Definition and encoding</h1>
+<p id="rfc.section.6.p.1">The "font" as the primary media content type indicates that the content identified by it requires certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping engine) to process font data, which in turn may require certain level of hardware capabilities such as certain levels of CPU performance and available memory. The "font" media type does not provide any specific information about the underlying data format and how the font information should be interpreted - the subtypes defined within a "font" tree will name the specific font formats.  Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations may pass unrecognized subtypes to a common font-handling system, if such system is available.</p>
+<h1 id="rfc.section.7"><a href="#rfc.section.7">7.</a> Defined subtypes</h1>
+<p id="rfc.section.7.p.1">In this section the initial entries under the top-level 'font' MIME type are documented. They also serve as examples for future registrations.</p>
+<p id="rfc.section.7.p.2">For each subtype, an @font-face format identifer is defined. This for use with the @font-face src descriptor, defined by the CSS3 Fonts specification <a href="#W3C.CR-css-fonts-3-20131003">[W3C.CR-css-fonts-3-20131003]</a>.</p>
+<h1 id="rfc.section.7.1"><a href="#rfc.section.7.1">7.1.</a> Generic SFNT font type</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">sfnt</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>1) Name: Outlines</dt>
+      <dd style="margin-left: 8">Value: TTF, CFF, SVG <br/><br/> This parameter can be used to specify the type of outlines supported by the font.  Value "TTF" shall be used when a font resource contains glyph outlines in TrueType format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines, and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF or SVG outlines can be present in various combinations in the same font file, therefore, this optional parameter is a list containing one or more items, separated by commas, with optional whitespace. Order in the list is not significant.</dd>
+      <dt>2) Name: Layout</dt>
+      <dd style="margin-left: 8"/>
+      <dt></dt>
+      <dd style="margin-left: 8">Value: OTL, AAT, SIL <br/><br/> This parameter identifies the type of implemented support for advanced text layout features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one shaping and layout mechanism may be supported by the same font file, therefore, this optional parameter is a list containing one or more items, separated by commas, with optional whitespace. Order in the list is not significant.</dd>
+    </dl>
+  </dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">As it was noted in the first paragraph of the "Security considerations" section, the same font format wrapper can be used to encode fonts with different types of glyph data represented as either TrueType or PostScript (CFF) outlines. Existing font rendering engines may not be able to process some of the particular outline formats, and downloading a font resource that contains unsupported glyph data format would result in inability of application to render and display text.  Therefore, it would be extremely useful to clearly identify the format of the glyph outline data within a font using an optional parameter, and allow applications to make decisions about downloading a particular font resource sooner. Similar, another optional parameter is suggested to identify the type of text shaping and layout mechanism that is supported by a font. Please note that as new outline formats and text shaping mechanisms may be defined in the future, the set of allowed values for two optional parameters defined by this section may be extended.</dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">ISO/IEC 14496-22 "Open Font Format" (OFF) specification <a href="#ISO.14496-22.2015">[ISO.14496-22.2015]</a> being developed by ISO/IEC SC29/WG11.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">Any and all applications that are able to create, edit or display textual media content.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The TrueType fonts and OFF / OpenType fonts containing TrueType outlines should use 0x00010000 as the 'sfnt' version number.<br/><br/> The OFF / OpenType fonts containing CFF data should use the tag 'OTTO' as 'sfnt' version number.</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">Font file extensions used for OFF / OpenType fonts: .ttf, .otf<br/><br/> Typically, .ttf extension is only used for fonts containing TrueType outlines, while .otf extension can be used for any OpenType/OFF font, either with TrueType or CFF outlines.</dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">none.</dd>
+      <dt>Fragment Identifiers</dt>
+      <dd style="margin-left: 8">none.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Vladimir Levantovsky (vladimir.levantovsky@monotype.com).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The ISO/IEC 14496-22 "Open Font Format" specification is a product of the ISO/IEC JTC1 SC29/WG11.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The ISO/IEC has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.section.7.2"><a href="#rfc.section.7.2">7.2.</a> TTF font type</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">ttf</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Name: Layout</dt>
+      <dd style="margin-left: 8">Value: OTL, AAT, SIL<br/><br/> This parameter identifies the type of support mechanism for advanced text layout features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one shaping and layout mechanism may be supported by the same font file, therefore, this optional parameter is a list containing one or more items, separated by commas, with optional whitespace. Order in the list is not significant.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">As was noted in the first paragraph of the "Security considerations" section, the same font format can be used to encode fonts supporting different types of outlines and/or text shaping and layout mechanisms. Existing font rendering engine implementations may not be able to process some of the particular layout table formats, and downloading a font resource that contains unsupported text shaping mechanism would result in inability of applications to display text properly.  Therefore, it would be extremely useful to clearly identify the supported text shaping and layout data within a font using an optional parameter, and allow applications to make decisions about downloading a particular font resource sooner.  Please note that as new text shaping mechanisms may be defined in the future, the set of allowed values for the optional parameter defined by this section may be extended.</dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">ISO/IEC 14496-22 "Open Font Format" (OFF) specification <a href="#ISO.14496-22.2015">[ISO.14496-22.2015]</a> being developed by ISO/IEC SC29/WG11.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">Any and all applications that are able to create, edit or display textual media content.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The TrueType fonts and OFF / OpenType fonts containing TrueType outlines should use 0x00010000 as the 'sfnt' version number.</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">Font file extensions used for TrueType / OFF / OpenType fonts: .ttf, .otf<br/><br/> Typically, .ttf extension is only used for fonts containing TrueType outlines, while .otf extension may be used for any OpenType/OFF font, either with TrueType or CFF outlines.</dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">truetype</dd>
+      <dt>Fragment Identifiers</dt>
+      <dd style="margin-left: 8">none.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Vladimir Levantovsky (vladimir.levantovsky@monotype.com).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The ISO/IEC 14496-22 "Open Font Format" specification is a product of the ISO/IEC JTC1 SC29/WG11.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The ISO/IEC has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.section.7.3"><a href="#rfc.section.7.3">7.3.</a> OTF font type</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">otf</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Name: Outlines</dt>
+      <dd style="margin-left: 8">Value: TTF, CFF, SVG<br/><br/> This parameter can be used to specify the type of outlines supported by the font.  Value "TTF" shall be used when a font resource contains glyph outlines in TrueType format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines, and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF or SVG outlines can be present in various combinations in the same font file, therefore, this optional parameter is a list containing one or more items, separated by commas, with optional whitespace. Order in the list is not significant.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">As it was noted in the first paragraph of the "Security considerations" section, the same font format can be used to encode fonts with different types of glyph data represented as either TrueType, PostScript (CFF) or SVG outlines. Existing font rendering engines may not be able to process some of the particular outline formats, and downloading a font resource that contains unsupported glyph data format would result in inability of application to render and display text. Therefore, it would be extremely useful to clearly identify the format of the glyph outline data within a font using an optional parameter, and allow applications to make decisions about downloading a particular font resource sooner.  Please note that as new outline formats may be defined in the future, the set of allowed values for the optional parameter defined in this section may be extended.</dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">ISO/IEC 14496-22 "Open Font Format" (OFF) specification <a href="#ISO.14496-22.2015">[ISO.14496-22.2015]</a> being developed by ISO/IEC SC29/WG11.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">Any and all applications that are able to create, edit or display textual media content.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The TrueType fonts and OFF / OpenType fonts containing TrueType outlines should use 0x00010000 as the 'sfnt' version number.<br/><br/> The OFF / OpenType fonts containing CFF outlines should use the tag 'OTTO' as 'sfnt' version number.  There is no magic number for SVG outlines; these are always accompanied by either TrueType or CFF outlines and thus use the corresponding magic number.</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">Font file extensions used for OFF / OpenType fonts: .ttf, .otf<br/><br/> Typically, .ttf extension is only used for fonts containing TrueType outlines, while .otf extension can be used for any OpenType/OFF font, either with TrueType, CFF or SVG outlines.</dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">opentype</dd>
+      <dt>Fragment Identifiers</dt>
+      <dd style="margin-left: 8">none.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Vladimir Levantovsky (vladimir.levantovsky@monotype.com).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The ISO/IEC 14496-22 "Open Font Format" specification is a product of the ISO/IEC JTC1 SC29/WG11.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The ISO/IEC has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.section.7.4"><a href="#rfc.section.7.4">7.4.</a> OTF font type</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">collection</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Name: Outlines</dt>
+      <dd style="margin-left: 8">Value: TTF, CFF, SVG<br/><br/> This parameter can be used to specify the type of outlines supported by the font.  Value "TTF" shall be used when a font resource contains glyph outlines in TrueType format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines, and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF or SVG outlines can be present in various combinations in the same font file, therefore, this optional parameter is a list containing one or more items, separated by commas, with optional whitespace. Order in the list is not significant.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">As it was noted in the first paragraph of the "Security considerations" section, the same font format can be used to encode fonts with different types of glyph data represented as either TrueType, PostScript (CFF) or SVG outlines. Existing font rendering engines may not be able to process some of the particular outline formats, and downloading a font resource that contains unsupported glyph data format would result in inability of application to render and display text. Therefore, it would be extremely useful to clearly identify the format of the glyph outline data within a font using an optional parameter, and allow applications to make decisions about downloading a particular font resource sooner.  Please note that as new outline formats may be defined in the future, the set of allowed values for the optional parameter defined in this section may be extended.</dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">ISO/IEC 14496-22 "Open Font Format" (OFF) specification <a href="#ISO.14496-22.2015">[ISO.14496-22.2015]</a> being developed by ISO/IEC SC29/WG11.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">Any and all applications that are able to create, edit or display textual media content.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The TrueType fonts and OFF / OpenType fonts containing TrueType outlines should use 0x00010000 as the 'sfnt' version number.<br/><br/> The OFF / OpenType fonts containing CFF outlines should use the tag 'OTTO' as 'sfnt' version number.  There is no magic number for SVG outlines; these are always accompanied by either TrueType or CFF outlines and thus use the corresponding magic number.</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">Font file extensions used for OFF / TrueType and OpenType fonts: .ttc </dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">collection</dd>
+      <dt>Fragment Identifiers</dt>
+      <dd style="margin-left: 8">A positive integer. For example, #2 refers to the second font in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font in the collection.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Vladimir Levantovsky (vladimir.levantovsky@monotype.com).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The ISO/IEC 14496-22 "Open Font Format" specification is a product of the ISO/IEC JTC1 SC29/WG11.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The ISO/IEC has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.section.7.5"><a href="#rfc.section.7.5">7.5.</a> WOFF 1.0</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">woff</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">None. </dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">This media type registration updates the WOFF specification <a href="#W3C.REC-WOFF-20121213">[W3C.REC-WOFF-20121213]</a> at W3C.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">WOFF is used by Web browsers, often in conjunction with HTML and CSS.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The signature field in the WOFF header MUST contain the "magic number" 0x774F4646</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">woff</dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>Macintosh Universal Type Identifier code:</dt>
+      <dd style="margin-left: 8"><samp>org.w3c.woff</samp> </dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">woff</dd>
+      <dt>Fragment Identifiers:</dt>
+      <dd style="margin-left: 8">none.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Chris Lilley (www-font@w3.org).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The WOFF specification is a work product of the World Wide Web Consortium's WebFonts Working Group.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The W3C has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.section.7.6"><a href="#rfc.section.7.6">7.6.</a> WOFF 2.0</h1>
+<p/>
+
+<dl>
+  <dt>Type name:</dt>
+  <dd style="margin-left: 8">font</dd>
+  <dt>Subtype name:</dt>
+  <dd style="margin-left: 8">woff2</dd>
+  <dt>Required parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Optional parameters:</dt>
+  <dd style="margin-left: 8">None.</dd>
+  <dt>Encoding considerations:</dt>
+  <dd style="margin-left: 8">Binary.</dd>
+  <dt>Interoperability considerations:</dt>
+  <dd style="margin-left: 8">WOFF 2.0 is an improvement on WOFF 1.0. The two formats have different Internet Media Types, different @font-face formats, and may be used in parallel. </dd>
+  <dt>Published specification:</dt>
+  <dd style="margin-left: 8">This media type registration is extracted from the WOFF 2.0 specification <a href="#W3C.WD-WOFF2-20150414">[W3C.WD-WOFF2-20150414]</a> at W3C.</dd>
+  <dt>Applications that use this media type:</dt>
+  <dd style="margin-left: 8">WOFF 2.0 is used by Web browsers, often in conjunction with HTML and CSS.</dd>
+  <dt>Additional information:</dt>
+  <dd style="margin-left: 8">
+    <dl>
+      <dt>Magic number(s):</dt>
+      <dd style="margin-left: 8">The signature field in the WOFF header MUST contain the "magic number" 0x774F4632 ('wOF2')</dd>
+      <dt>File extension(s):</dt>
+      <dd style="margin-left: 8">woff2</dd>
+      <dt>Macintosh file type code(s):</dt>
+      <dd style="margin-left: 8">(no code specified)</dd>
+      <dt>Macintosh Universal Type Identifier code:</dt>
+      <dd style="margin-left: 8"><samp>org.w3c.woff2</samp> </dd>
+      <dt>@font-face Format:</dt>
+      <dd style="margin-left: 8">woff2</dd>
+      <dt>Fragment Identifiers</dt>
+      <dd style="margin-left: 8">Optional, for collections encoded as WOFF 2.0. A positive integer.  For example, #2 refers to the second font in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font in the collection (or the only font, if it is not a collection). If a fragment is specified, and the WOFF does not encode a collection, the fragment is ignored.</dd>
+    </dl>
+    <p> </p>
+  </dd>
+  <dt>Person &amp; email address to contact for further information:</dt>
+  <dd style="margin-left: 8">Chris Lilley (www-font@w3.org).</dd>
+  <dt>Intended usage:</dt>
+  <dd style="margin-left: 8">COMMON</dd>
+  <dt>Restrictions on usage:</dt>
+  <dd style="margin-left: 8">None</dd>
+  <dt>Author:</dt>
+  <dd style="margin-left: 8">The WOFF2 specification is a work product of the World Wide Web Consortium's WebFonts Working Group.</dd>
+  <dt>Change controller:</dt>
+  <dd style="margin-left: 8">The W3C has change control over this specification.</dd>
+</dl>
+
+<p> </p>
+<h1 id="rfc.references"><a href="#rfc.references">8.</a> References</h1>
+<h1 id="rfc.references.1"><a href="#rfc.references.1">8.1.</a> Normative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="RFC2119">[RFC2119]</b>
+      </td>
+      <td class="top"><a>Bradner, S.</a>, "<a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="W3C.CR-css-fonts-3-20131003">[W3C.CR-css-fonts-3-20131003]</b>
+      </td>
+      <td class="top"><a>Daggett, J.</a>, "<a href="http://www.w3.org/TR/2013/CR-css-fonts-3-20131003">CSS Fonts Module Level 3</a>", World Wide Web Consortium CR CR-css-fonts-3-20131003, October 2013.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="ISO.14496-22.2015">[ISO.14496-22.2015]</b>
+      </td>
+      <td class="top"><a>International Organization for Standardization</a>, "<a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c066391_ISO_IEC_14496-22_2015.zip">Coding of audio-visual objects Part 22: Open Font Format</a>", ISO Standard 14496-22, 10 2015.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="W3C.REC-WOFF-20121213">[W3C.REC-WOFF-20121213]</b>
+      </td>
+      <td class="top"><a>Kew, J.</a>, <a>Leming, T.</a> and <a>E. Blokland</a>, "<a href="http://www.w3.org/TR/2012/REC-WOFF-20121213">WOFF File Format 1.0</a>", World Wide Web Consortium Recommendation REC-WOFF-20121213, December 2012.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="W3C.WD-WOFF2-20150414">[W3C.WD-WOFF2-20150414]</b>
+      </td>
+      <td class="top"><a>Levantovsky, V.</a> and <a>R. Levien</a>, "<a href="http://www.w3.org/TR/2015/WD-WOFF2-20150414">WOFF File Format 2.0</a>", World Wide Web Consortium WD WD-WOFF2-20150414, April 2015.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.references.2"><a href="#rfc.references.2">8.2.</a> Informative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="HTTP-Archive-Trends">[HTTP-Archive-Trends]</b>
+      </td>
+      <td class="top"><a>Kuetell, d.</a>, "<a href="http://httparchive.org/trends.php?s=All&amp;minlabel=Nov+15+2010&amp;maxlabel=Feb+15+2015#perFonts">HTTP Archive trend analysis</a>", March 2015.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="Font-Media-Type-Analysis">[Font-Media-Type-Analysis]</b>
+      </td>
+      <td class="top"><a>Kuetell, d.</a>, "<a href="http://goo.gl/zbDhUN">Web Font Media Type (mime type) Analysis 2015</a>", 2015.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.authors">
+  <a href="#rfc.authors">Author's Address</a>
+</h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Chris Lilley</span> 
+	  <span class="n hidden">
+		<span class="family-name">Lilley</span>
+	  </span>
+	</span>
+	<span class="org vcardline">W3C</span>
+	<span class="adr">
+	  <span class="vcardline">2004 Route des Lucioles</span>
+
+	  <span class="vcardline">
+		<span class="locality">Sophia Antipolis</span>,  
+		<span class="region"></span>
+		<span class="code">06902</span>
+	  </span>
+	  <span class="country-name vcardline">France</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:chris@w3.org">chris@w3.org</a></span>
+
+  </address>
+</div>
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Specification development</a></li>
+<li>2.   <a href="#rfc.section.2">Introduction</a></li>
+<li>3.   <a href="#rfc.section.3">Background and Justification</a></li>
+<li>4.   <a href="#rfc.section.4">Security considerations</a></li>
+<li>5.   <a href="#rfc.section.5">IANA Considerations</a></li>
+<li>6.   <a href="#rfc.section.6">Definition and encoding</a></li>
+<li>7.   <a href="#rfc.section.7">Defined subtypes</a></li>
+<ul><li>7.1.   <a href="#rfc.section.7.1">Generic SFNT font type</a></li>
+<li>7.2.   <a href="#rfc.section.7.2">TTF font type</a></li>
+<li>7.3.   <a href="#rfc.section.7.3">OTF font type</a></li>
+<li>7.4.   <a href="#rfc.section.7.4">OTF font type</a></li>
+<li>7.5.   <a href="#rfc.section.7.5">WOFF 1.0</a></li>
+<li>7.6.   <a href="#rfc.section.7.6">WOFF 2.0</a></li>
+</ul><li>8.   <a href="#rfc.references">References</a></li>
+<ul><li>8.1.   <a href="#rfc.references.1">Normative References</a></li>
+<li>8.2.   <a href="#rfc.references.2">Informative References</a></li>
+</ul><li><a href="#rfc.authors">Author's Address</a></li>
+
+
+  </ul>
+
+  
+
+</body>
+</html>
