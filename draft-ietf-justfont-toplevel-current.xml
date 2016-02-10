@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--DOCTYPE rfc SYSTEM "rfc.dtd"-->
 <!DOCTYPE rfc SYSTEM "rfc2629.dtd">
-<rfc docName="draft-ietf-justfont-toplevel-00" category="std" ipr='trust200902'>
+<rfc docName="draft-ietf-justfont-toplevel-current" category="std" ipr='trust200902'>
 <front>
 <title>The font Top Level Type </title>
 <author initials="C" surname="Lilley" fullname="Chris Lilley">
@@ -16,7 +16,7 @@
   	<email>chris@w3.org</email>
   </address>
 </author>
-<date day="29" month="January" year="2016"/>
+<date day="10" month="February" year="2016"/>
 <keyword>Internet Media Types</keyword>
 <abstract>
  <t>
