@@ -23,8 +23,8 @@
       This memo serves to register and document the <spanx style="verb">font</spanx> Top Level Type,
       under which the Internet Media subtypes for representation formats for fonts may be registered. This
       document also serves as a registration application for a set of intended subtypes,
-      which are representative of some existing subtypes already registered under the "application"
-      tree by their separate registrations.
+      which are representative of some existing subtypes already in use, and currently registered 
+      under the "application" tree by their separate registrations.
     </t>
 </abstract>
 </front>
