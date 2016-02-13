@@ -137,7 +137,8 @@
   </section>
   <section title="IANA Considerations ">
   <t>This specification requires IANA to modify the rules for the existing Internet Media Types
-  registry by adding a new font top-level type in the standards tree.</t>
+  registry by adding a new font top-level type in the standards tree, and registering several
+  subtypes.</t>
   </section>
 <section title="Definition and encoding">
     <t>The "font" as the primary media content type indicates that the content identified by it requires
