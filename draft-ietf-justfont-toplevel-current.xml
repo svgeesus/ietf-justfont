@@ -629,11 +629,11 @@
     <format type="HTML" target="http://www.w3.org/TR/2012/REC-WOFF-20121213"/>
   </reference>
 
-		<reference anchor="W3C.WD-WOFF2-20150414" target="http://www.w3.org/TR/2015/WD-WOFF2-20150414">
+		<reference anchor="W3C.WD-WOFF2-20150414" target="https://www.w3.org/TR/2016/CR-WOFF2-20160315/">
       <front><title>WOFF File Format 2.0</title>
       <author initials="V." surname="Levantovsky" fullname="Vladimir Levantovsky"><organization/></author>
       <author initials="R." surname="Levien" fullname="Raph Levien"><organization/></author>
-      <date month="April" day="14" year="2015"/>
+      <date month="March" day="15" year="2016"/>
 		<abstract><t>Based on experience with WOFF 1.0, which is widely deployed, this specification was
       developed to provide improved compression and thus lower use of network bandwidth, while still
       allowing fast decompression even on mobile devices. This is achieved by combining a content-aware
@@ -641,7 +641,7 @@
       WOFF 1.0.</t>
     </abstract>
 		</front><seriesInfo name="World Wide Web Consortium WD" value="WD-WOFF2-20150414"/>
-    <format type="HTML" target="http://www.w3.org/TR/2015/WD-WOFF2-20150414"/></reference>
+    <format type="HTML" target="https://www.w3.org/TR/2016/CR-WOFF2-20160315/"/></reference>
 
 	</references>
 	<references  title='Informative References'>
