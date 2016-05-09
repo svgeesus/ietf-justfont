@@ -502,7 +502,7 @@
   <t hangText="Additional information:">
   <list style="hanging">
     <t hangText="Magic number(s):">The signature field in the WOFF header MUST
-    contain the "magic number" 0x774F4646 'wOFF')</t>
+    contain the "magic number" 0x774F4646 ('wOFF')</t>
     <t hangText="File extension(s):">woff</t>
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3c.woff</spanx> </t>
