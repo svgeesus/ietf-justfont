@@ -52,7 +52,7 @@
       the desired position and size.</t>
     <t>
       This document defines a top-level Internet Media Type type "font" under which different
-      representation formats of fonts may be registered (e.g. bitmap or outline formats).
+      representation formats of fonts may be registered (e.g. a bitmap or outline formats).
       <!-- not clear the rest of this paragraph is actually needed. -->
       It should be
       emphasized that, just as under the "image" top-level type one does not find registration
