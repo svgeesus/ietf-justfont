@@ -130,7 +130,7 @@
       are sufficiently complex, and most (if not all) interpreters cannot be completely protected from
       malicious fonts without undue performance penalties.</t>
 
-    <t>Widespread use of fonts as necessary component of visual content presentation warrants that a
+    <t>Widespread use of fonts as necessary components of visual content presentation warrants that
       careful attention should be given to security considerations whenever a font is either embedded
       into an electronic document or transmitted alongside media content as a linked resource. While
       many existing font formats provide certain levels of protection of data integrity (such mechanisms
@@ -150,12 +150,12 @@
       any specific information about the underlying data format and how the font information should be
       interpreted - the subtypes defined within a "font" tree will name the specific font formats.
       Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations
-      may pass unrecognized subtypes to a common font-handling system, if such system is available.</t>
+      may pass unrecognized subtypes to a common font-handling system, if such a system is available.</t>
   </section>
 <section title="Defined subtypes">
     <t>In this section the initial entries under the top-level 'font' MIME type are documented. They also
       serve as examples for future registrations.</t>
-    <t>For each subtype, an @font-face format identifer is defined. This for use with the @font-face
+    <t>For each subtype, an @font-face format identifer is defined. This is for use with the @font-face
     src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.</t>
   <section title="Generic SFNT font type">
   <t>
