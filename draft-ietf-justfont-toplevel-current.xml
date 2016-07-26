@@ -54,24 +54,17 @@
       This document defines a new top-level Internet Media Type "font" according to Section 4.2.7
 	  of <xref target="RFC6838"/>. This top-level type indicates that the content specifies
 	  font data. Under this top-level type, different representation formats of fonts may be
-	  registered (e.g. bitmap or outline formats).
-      <!-- not clear the rest of this paragraph is actually needed. -->
-      It should be
-      emphasized that, just as under the "image" top-level type one does not find registration
-      for a specific image, for example, "The Night-watch" (by Rembrandt) but instead "JPEG"
-      (a compressed image data representation format), so, under "font" one will not find
-      "Courier" (the name of a popular font) but perhaps "TTF", "OTF" or "SFNT" (the names of
-      commonly used TrueType and OpenType font formats as well as their higher-level wrapper
-      format).</t>
+	  registered (e.g. bitmap or outline formats).</t>
       <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
       NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
       "OPTIONAL" in this document are to be interpreted as described in
       RFC 2119 <xref target="RFC2119"/>.</t>
 </section>
 <section title="Background and Justification">
-    <t>Historically there has not been a registration of formats for fonts. Most recently, there
+    <t>Historically there has not been a registration of formats for fonts. More recently, there
       have been several representation formats registered as MIME subtypes under the "application"
-      top-level type.  However, with the rapid adoption of web fonts (based on the data
+      top-level type (for example, application/font-woff).  
+      However, with the rapid adoption of web fonts (based on the data
       from HTTP Archive <xref target="HTTP-Archive-Trends"/>
       showing a huge increase in web font usage from 1% in the end of 2010
       to 50% across all sites in the beginning of 2015) custom fonts on the web have become
@@ -84,7 +77,8 @@
       "application/octet-stream", "text/plain" and "text/html"; or use unregistrable types
       such as "application/x-font-ttf".</t>
 
-    <t>Contrary to our expectations, the officially defined IANA subtypes such as "application/font-woff"
+    <t>Contrary to the expectations of the W3C WebFonts Working Group which developed WOFF, 
+      the officially defined IANA subtypes such as "application/font-woff"
       and "application/font-sfnt" see a very limited use - their adoption rates trail far behind as the
       actual use of web fonts continues to increase. The members of the W3C WebFonts WG concluded that
       the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated
@@ -139,7 +133,8 @@
   </section>
   <section title="IANA Considerations ">
   <t>This specification requires IANA to modify the rules for the existing Internet Media Types
-  registry by adding a new font top-level type in the standards tree, and registering several
+  registry by adding a new font top-level type in the standards tree, updating the media types 
+  registration form <xref target="Media-Type-Registration"/>, and registering several
   subtypes.</t>
   </section>
 <section title="Definition and encoding">
@@ -688,6 +683,13 @@
     			</t></abstract>
     		</front>
     	</reference>
+      <reference anchor="Media-Type-Registration" target="http://www.iana.org/form/media-types">
+        <front>
+        <title>Application for a Media Type</title>
+        <author><organization>IANA</organization></author>
+        <abstract><t>Application form for new Internet Media Types.</t></abstract>
+        </front>
+    </reference>
     </references>
 </back>
     </rfc>
