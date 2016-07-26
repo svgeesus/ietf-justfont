@@ -387,9 +387,10 @@
 <link href="#rfc.section.7.4" rel="Chapter" title="7.4 Collection font type"/>
 <link href="#rfc.section.7.5" rel="Chapter" title="7.5 WOFF 1.0"/>
 <link href="#rfc.section.7.6" rel="Chapter" title="7.6 WOFF 2.0"/>
-<link href="#rfc.references" rel="Chapter" title="8 References"/>
-<link href="#rfc.references.1" rel="Chapter" title="8.1 Normative References"/>
-<link href="#rfc.references.2" rel="Chapter" title="8.2 Informative References"/>
+<link href="#rfc.section.8" rel="Chapter" title="8 New Registrations"/>
+<link href="#rfc.references" rel="Chapter" title="9 References"/>
+<link href="#rfc.references.1" rel="Chapter" title="9.1 Normative References"/>
+<link href="#rfc.references.2" rel="Chapter" title="9.2 Informative References"/>
 <link href="#rfc.authors" rel="Chapter"/>
 
 
@@ -398,7 +399,7 @@
 
   <meta name="dct.creator" content="Lilley, C." />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-justfont-toplevel-current" />
-  <meta name="dct.issued" scheme="ISO8601" content="2016-2-10" />
+  <meta name="dct.issued" scheme="ISO8601" content="2016-5-03" />
   <meta name="dct.abstract" content="This memo serves to register and document the " />
   <meta name="description" content="This memo serves to register and document the " />
 
@@ -419,10 +420,10 @@
 </tr>
 <tr>
   <td class="left">Intended status: Standards Track</td>
-  <td class="right">February 10, 2016</td>
+  <td class="right">May 03, 2016</td>
 </tr>
 <tr>
-  <td class="left">Expires: August 13, 2016</td>
+  <td class="left">Expires: November 4, 2016</td>
   <td class="right"></td>
 </tr>
 
@@ -436,14 +437,14 @@
   <h1 id="rfc.abstract">
   <a href="#rfc.abstract">Abstract</a>
 </h1>
-<p>This memo serves to register and document the <samp>font</samp> Top Level Type, under which the Internet Media subtypes for representation formats for fonts may be registered. This document also serves as a registration application for a set of intended subtypes, which are representative of some existing subtypes already registered under the "application" tree by their separate registrations.  </p>
+<p>This memo serves to register and document the <samp>font</samp> Top Level Type, under which the Internet Media subtypes for representation formats for fonts may be registered. This document also serves as a registration application for a set of intended subtypes, which are representative of some existing subtypes already in use, and currently registered under the "application" tree by their separate registrations.  </p>
 <h1 id="rfc.status">
   <a href="#rfc.status">Status of This Memo</a>
 </h1>
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on August 13, 2016.</p>
+<p>This Internet-Draft will expire on November 4, 2016.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -453,23 +454,23 @@
 <p id="rfc.section.1.p.1">This section is non-normative. The source for this specification is <a href="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</a>.  The <a href="https://github.com/svgeesus/ietf-justfont/issues">issues list</a> is also on GitHub.  Discussion should be on the mailing list <a href="mailto:justfont@ietf.org">justfont@ietf.org</a>.  </p>
 <h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> <a href="#intro" id="intro">Introduction</a></h1>
 <p id="rfc.section.2.p.1">The process of setting type in computer systems and other forms of text presentation systems uses fonts in order to provide visual representations of the glyphs. Just as with images, for example, there are a number of ways to represent the visual information of the glyphs. Early font formats often used bitmaps, as these could have been carefully tuned for maximum readability at a given size on low-resolution displays. More recently, scalable vector outline fonts have come into widespread use: in these fonts, the outlines of the glyphs are described, and the presentation system renders the outline in the desired position and size.</p>
-<p id="rfc.section.2.p.2">This document defines a top-level Internet Media Type type "font" under which different representation formats of fonts may be registered (e.g. a bitmap or outline formats).  It should be emphasized that, just as under the "image" top-level type one does not find registration for a specific image, for example, "The Night-watch" (by Rembrandt) but instead "JPEG" (a compressed image data representation format), so, under "font" one will not find "Courier" (the name of a popular font) but perhaps "TTF", "OTF" or "SFNT" (the names of commonly used TrueType and OpenType font formats as well as their higher-level wrapper format).</p>
+<p id="rfc.section.2.p.2">This document defines a new top-level Internet Media Type "font" according to Section 4.2.7 of <a href="#RFC6838">[RFC6838]</a>. This top-level type indicates that the content specifies font data. Under this top-level type, different representation formats of fonts may be registered (e.g. bitmap or outline formats).</p>
 <p id="rfc.section.2.p.3">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 <a href="#RFC2119">[RFC2119]</a>.</p>
 <h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> Background and Justification</h1>
-<p id="rfc.section.3.p.1">Historically there has not been a registration of formats for fonts. Most recently, there have been several representation formats registered as MIME subtypes under the "application" top-level type.  However, with the rapid adoption of web fonts (based on the data from HTTP Archive <a href="#HTTP-Archive-Trends">[HTTP-Archive-Trends]</a> showing a huge increase in web font usage from 1% in the end of 2010 to 50% across all sites in the beginning of 2015) custom fonts on the web have become a core web resource. As the in-depth analysis <a href="#Font-Media-Type-Analysis">[Font-Media-Type-Analysis]</a> shows, the lack of the intuitive top-level font type is causing significant confusion among developers - while currently defined font subtypes are severely under-utilized there are many more sites that already use non-existent (but highly intuitive) media types such as "font/woff", "font/ttf" and "font/truetype". At the same time, the majority of sites resort to using generic types such as "application/octet-stream", "text/plain" and "text/html"; or use unregistrable types such as "application/x-font-ttf".</p>
-<p id="rfc.section.3.p.2">Contrary to our expectations, the officially defined IANA subtypes such as "application/font-woff" and "application/font-sfnt" see a very limited use - their adoption rates trail far behind as the actual use of web fonts continues to increase. The members of the W3C WebFonts WG believe the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated (correctly) with great caution with respect to viruses and other active code. Secondly, the lack of a top-level type means that there is no opportunity to have a common set of optional attributes, such as are specified here. Third, fonts have a unique set of licensing and usage restrictions, which makes it worthwhile to identify this general category with a unique top-level type.</p>
-<p id="rfc.section.3.p.3">The W3C WebFonts WG believes that the situation can be significantly improved if a set of font media types is registered using "font" as a dedicated top-level type. Based on the data analysis presented above, we believe that it is the presence of simple and highly intuitive media types for images that caused the widespread adoption of IANA's recommendations, where the correct usage of existing media types reaches over 97% for all subtypes in the "image" tree. The WG believes that, considering a rapid adoption of fonts on the web, the registration of the top-level media type for fonts along with the intuitive set of subtypes that reflect popular and widely used data formats would further stimulate the adoption of web fonts, significantly simplify web server configuration process and facilitate the proper use of IANA media type recommendations.</p>
+<p id="rfc.section.3.p.1">Historically there has not been a registration of formats for fonts. More recently, there have been several representation formats registered as MIME subtypes under the "application" top-level type (for example, application/font-woff).  However, with the rapid adoption of web fonts (based on the data from HTTP Archive <a href="#HTTP-Archive-Trends">[HTTP-Archive-Trends]</a> showing a huge increase in web font usage from 1% in the end of 2010 to 50% across all sites in the beginning of 2015) custom fonts on the web have become a core web resource. As the in-depth analysis <a href="#Font-Media-Type-Analysis">[Font-Media-Type-Analysis]</a> shows, the lack of the intuitive top-level font type is causing significant confusion among developers - while currently defined font subtypes are severely under-utilized there are many more sites that already use non-existent (but highly intuitive) media types such as "font/woff", "font/ttf" and "font/truetype". At the same time, the majority of sites resort to using generic types such as "application/octet-stream", "text/plain" and "text/html"; or use unregistrable types such as "application/x-font-ttf".</p>
+<p id="rfc.section.3.p.2">Contrary to the expectations of the W3C WebFonts Working Group which developed WOFF, the officially defined IANA subtypes such as "application/font-woff" and "application/font-sfnt" see a very limited use - their adoption rates trail far behind as the actual use of web fonts continues to increase. The members of the W3C WebFonts WG concluded that the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated (correctly) with great caution with respect to viruses and other active code. Secondly, the lack of a top-level type means that there is no opportunity to have a common set of optional attributes, such as are specified here. Third, fonts have a unique set of licensing and usage restrictions, which makes it worthwhile to identify this general category with a unique top-level type.</p>
+<p id="rfc.section.3.p.3">The W3C WebFonts WG decided that the situation can be significantly improved if a set of font media types is registered using "font" as a dedicated top-level type. Based on the data analysis presented above, we conclude that it is the presence of simple and highly intuitive media types for images that caused the widespread adoption of IANA's recommendations, where the correct usage of existing media types reaches over 97% for all subtypes in the "image" tree. The WG considers that, considering a rapid adoption of fonts on the web, the registration of the top-level media type for fonts along with the intuitive set of subtypes that reflect popular and widely used data formats would further stimulate the adoption of web fonts, significantly simplify web server configuration process and facilitate the proper use of IANA media type recommendations.</p>
 <h1 id="rfc.section.4"><a href="#rfc.section.4">4.</a> Security considerations</h1>
 <p id="rfc.section.4.p.1">Fonts are interpreted data structures that represent collections of different tables containing data that represent different types of information, including glyph outlines in various formats, hinting instructions, metrics and layout information for multiple languages and writing systems, rules for glyph substitution and positioning, etc. Depending on the format used to represent the glyph data the font may contain TrueType, PostScript or SVG outlines and their respective hint instructions, where applicable. There are many existing, already standardized font table tags and formats that allow an unspecified number of entries containing predefined data fields for storage of variable length binary data. Many existing (TrueType, OpenType and OFF, SIL Graphite, WOFF, etc.) font formats are based on the table-based SFNT (scalable font) format which is extremely flexible, highly extensible and offers an opportunity to introduce additional table structures when needed, in a way that would not affect existing font rendering engines and text layout implementations.  However, this very extensibility may present specific security concerns &#8211; the flexibility and ease of adding new data structures makes it easy for any arbitrary data to be hidden inside a font file.  There is a significant risk that the flexibility of font data structures may be exploited to hide malicious binary content disguised as a font data component.</p>
 <p id="rfc.section.4.p.2">Fonts may contain 'hints', which are programmatic instructions that are executed by the font engine for the alignment of graphical elements of glyph outlines with the target display pixel grid.  Depending on the font technology utilized in the creation of a font these hints may represent active code interpreted and executed by the font rasterizer. Even though hints operate within the confines of the glyph outline conversion system and have no access outside the font rendering engine, hint instructions can be, however, quite complex, and a maliciously designed complex font could cause undue resource consumption (e.g. memory or CPU cycles) on a machine interpreting it. Indeed, fonts are sufficiently complex, and most (if not all) interpreters cannot be completely protected from malicious fonts without undue performance penalties.</p>
-<p id="rfc.section.4.p.3">Widespread use of fonts as necessary component of visual content presentation warrants that a careful attention should be given to security considerations whenever a font is either embedded into an electronic document or transmitted alongside media content as a linked resource. While many existing font formats provide certain levels of protection of data integrity (such mechanisms include e.g. checksums and digital signatures), font data formats provide neither privacy nor confidentiality protection internally; if needed, such protection should be provided externally.</p>
+<p id="rfc.section.4.p.3">Widespread use of fonts as necessary components of visual content presentation warrants that careful attention should be given to security considerations whenever a font is either embedded into an electronic document or transmitted alongside media content as a linked resource. While many existing font formats provide certain levels of protection of data integrity (such mechanisms include e.g. checksums and digital signatures), font data formats provide neither privacy nor confidentiality protection internally; if needed, such protection should be provided externally.</p>
 <h1 id="rfc.section.5"><a href="#rfc.section.5">5.</a> IANA Considerations </h1>
-<p id="rfc.section.5.p.1">This specification requires IANA to modify the rules for the existing Internet Media Types registry by adding a new font top-level type in the standards tree.</p>
+<p id="rfc.section.5.p.1">This specification requires IANA to modify the rules for the existing Internet Media Types registry by adding a new font top-level type in the standards tree, updating the media types registration form <a href="#Media-Type-Registration">[Media-Type-Registration]</a>, and registering several subtypes.</p>
 <h1 id="rfc.section.6"><a href="#rfc.section.6">6.</a> Definition and encoding</h1>
-<p id="rfc.section.6.p.1">The "font" as the primary media content type indicates that the content identified by it requires certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping engine) to process font data, which in turn may require certain level of hardware capabilities such as certain levels of CPU performance and available memory. The "font" media type does not provide any specific information about the underlying data format and how the font information should be interpreted - the subtypes defined within a "font" tree will name the specific font formats.  Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations may pass unrecognized subtypes to a common font-handling system, if such system is available.</p>
+<p id="rfc.section.6.p.1">The "font" as the primary media content type indicates that the content identified by it requires certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping engine) to process font data, which in turn may require certain level of hardware capabilities such as certain levels of CPU performance and available memory. The "font" media type does not provide any specific information about the underlying data format and how the font information should be interpreted - the subtypes defined within a "font" tree will name the specific font formats.  Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations may pass unrecognized subtypes to a common font-handling system, if such a system is available.</p>
 <h1 id="rfc.section.7"><a href="#rfc.section.7">7.</a> Defined subtypes</h1>
 <p id="rfc.section.7.p.1">In this section the initial entries under the top-level 'font' MIME type are documented. They also serve as examples for future registrations.</p>
-<p id="rfc.section.7.p.2">For each subtype, an @font-face format identifer is defined. This for use with the @font-face src descriptor, defined by the CSS3 Fonts specification <a href="#W3C.CR-css-fonts-3-20131003">[W3C.CR-css-fonts-3-20131003]</a>.</p>
+<p id="rfc.section.7.p.2">For each subtype, an @font-face format identifer is defined. This is for use with the @font-face src descriptor, defined by the CSS3 Fonts specification <a href="#W3C.CR-css-fonts-3-20131003">[W3C.CR-css-fonts-3-20131003]</a>.</p>
 <h1 id="rfc.section.7.1"><a href="#rfc.section.7.1">7.1.</a> Generic SFNT font type</h1>
 <p/>
 
@@ -717,7 +718,7 @@
   <dd style="margin-left: 8">
     <dl>
       <dt>Magic number(s):</dt>
-      <dd style="margin-left: 8">The signature field in the WOFF header MUST contain the "magic number" 0x774F4646</dd>
+      <dd style="margin-left: 8">The signature field in the WOFF header MUST contain the "magic number" 0x774F4646 ('wOFF')</dd>
       <dt>File extension(s):</dt>
       <dd style="margin-left: 8">woff</dd>
       <dt>Macintosh file type code(s):</dt>
@@ -795,8 +796,10 @@
 </dl>
 
 <p> </p>
-<h1 id="rfc.references"><a href="#rfc.references">8.</a> References</h1>
-<h1 id="rfc.references.1"><a href="#rfc.references.1">8.1.</a> Normative References</h1>
+<h1 id="rfc.section.8"><a href="#rfc.section.8">8.</a> New Registrations</h1>
+<p id="rfc.section.8.p.1">New font formats should be registered using the online form <a href="#Media-Type-Registration">[Media-Type-Registration]</a>.  RFC 6838 <a href="#RFC6838">[RFC6838]</a> should be consulted on registration procedures. In particular the font specification must be freely available and the ABNF must be followed. Also, an @font-face format should be supplied and, if used, a definition of the fragment identifier syntax for the new type.</p>
+<h1 id="rfc.references"><a href="#rfc.references">9.</a> References</h1>
+<h1 id="rfc.references.1"><a href="#rfc.references.1">9.1.</a> Normative References</h1>
 <table>
   <tbody>
     <tr>
@@ -804,6 +807,12 @@
         <b id="RFC2119">[RFC2119]</b>
       </td>
       <td class="top"><a>Bradner, S.</a>, "<a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="RFC6838">[RFC6838]</b>
+      </td>
+      <td class="top"><a>Freed, N.</a>, <a>Klensin, J.</a> and <a>T. Hansen</a>, "<a href="http://tools.ietf.org/html/rfc6838">Media Type Specifications and Registration Procedures</a>", BCP 13, RFC 6838, DOI 10.17487/RFC6838, January 2013.</td>
     </tr>
     <tr>
       <td class="reference">
@@ -827,11 +836,11 @@
       <td class="reference">
         <b id="W3C.WD-WOFF2-20150414">[W3C.WD-WOFF2-20150414]</b>
       </td>
-      <td class="top"><a>Levantovsky, V.</a> and <a>R. Levien</a>, "<a href="http://www.w3.org/TR/2015/WD-WOFF2-20150414">WOFF File Format 2.0</a>", World Wide Web Consortium WD WD-WOFF2-20150414, April 2015.</td>
+      <td class="top"><a>Levantovsky, V.</a> and <a>R. Levien</a>, "<a href="https://www.w3.org/TR/2016/CR-WOFF2-20160315/">WOFF File Format 2.0</a>", World Wide Web Consortium WD WD-WOFF2-20150414, March 2016.</td>
     </tr>
   </tbody>
 </table>
-<h1 id="rfc.references.2"><a href="#rfc.references.2">8.2.</a> Informative References</h1>
+<h1 id="rfc.references.2"><a href="#rfc.references.2">9.2.</a> Informative References</h1>
 <table>
   <tbody>
     <tr>
@@ -845,6 +854,12 @@
         <b id="Font-Media-Type-Analysis">[Font-Media-Type-Analysis]</b>
       </td>
       <td class="top"><a>Kuetell, D.</a>, "<a href="http://goo.gl/zbDhUN">Web Font Media Type (mime type) Analysis 2015</a>", 2015.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="Media-Type-Registration">[Media-Type-Registration]</b>
+      </td>
+      <td class="top"><a>IANA</a>, "<a href="http://www.iana.org/form/media-types">Application for a Media Type</a>"</td>
     </tr>
   </tbody>
 </table>
@@ -892,9 +907,10 @@
 <li>7.4.   <a href="#rfc.section.7.4">Collection font type</a></li>
 <li>7.5.   <a href="#rfc.section.7.5">WOFF 1.0</a></li>
 <li>7.6.   <a href="#rfc.section.7.6">WOFF 2.0</a></li>
-</ul><li>8.   <a href="#rfc.references">References</a></li>
-<ul><li>8.1.   <a href="#rfc.references.1">Normative References</a></li>
-<li>8.2.   <a href="#rfc.references.2">Informative References</a></li>
+</ul><li>8.   <a href="#rfc.section.8">New Registrations</a></li>
+<li>9.   <a href="#rfc.references">References</a></li>
+<ul><li>9.1.   <a href="#rfc.references.1">Normative References</a></li>
+<li>9.2.   <a href="#rfc.references.2">Informative References</a></li>
 </ul><li><a href="#rfc.authors">Author's Address</a></li>
 
 
