@@ -582,6 +582,14 @@
 
    </section>
    </section>
+
+   <section title="New Registrations">
+    <t>New font formats should be registered using the online form <xref target="Media-Type-Registration"/>. 
+    RFC 6838 <xref target="RFC6838"/> should be consulted on registration procedures. In particular
+    the font specification must be freely available and the ABNF must be followed. Also,
+    an @font-face format should be supplied and,
+    if used, a definition of the fragment identifier syntax for the new type.
+   </section>
 </middle>
 <back>
 	<references  title='Normative References'>
