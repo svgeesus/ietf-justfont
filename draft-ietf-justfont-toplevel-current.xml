@@ -102,10 +102,15 @@
       data that represent different types of information, including glyph outlines in various formats,
       hinting instructions, metrics and layout information for multiple languages and writing systems,
       rules for glyph substitution and positioning, etc. Depending on the format used to represent the
-      glyph data the font may contain TrueType, PostScript or SVG outlines and their respective hint
+      glyph data the font may contain TrueType <xref target="truetype-wiki"/>, 
+      PostScript <xref target="postscript-wiki"/> or 
+      SVG <xref target="svg-wiki"/>
+      outlines and their respective hint
       instructions, where applicable. There are many existing, already standardized font table tags
       and formats that allow an unspecified number of entries containing predefined data fields for
-      storage of variable length binary data. Many existing (TrueType, OpenType and OFF, SIL Graphite,
+      storage of variable length binary data. Many existing (TrueType, OpenType
+      <xref target="opentype-wiki"/>
+       and OFF, SIL Graphite,
       WOFF, etc.) font formats are based on the table-based SFNT (scalable font) format which is extremely
       flexible, highly extensible and offers an opportunity to introduce additional table structures when
       needed, in a way that would not affect existing font rendering engines and text layout implementations.
@@ -663,6 +668,40 @@
 
 	</references>
 	<references  title='Informative References'>
+      <reference anchor="opentype-wiki" target="https://en.wikipedia.org/wiki/OpenType">
+        <front>
+          <title>
+          <abstract><t>OpenType is a format for scalable computer fonts. It was built 
+          on its predecessor TrueType, retaining TrueType's basic structure and adding 
+          many intricate data structures for prescribing typographic behavior. </t></abstract>
+        </front>
+      </reference>
+      <reference anchor="postscript-wiki" target="">
+        <front>
+          <title>
+          <abstract><t>PostScript (PS) is a computer language for creating vector 
+          graphics. It is a dynamically typed, concatenative programming language and 
+          was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, 
+          Ed Taft and Bill Paxton from 1982 to 1984.</t></abstract>
+        </front>
+      </reference>
+      <reference anchor="truetype-wiki" target="https://en.wikipedia.org/wiki/TrueType">
+        <front>
+          <title>
+          <abstract><t>TrueType is an outline font standard developed by Apple and Microsoft 
+          in the late 1980s as a competitor to Adobe's Type 1 fonts used in 
+          PostScript. </t></abstract>
+        </front>
+      </reference>
+      <reference anchor="svg-wiki" target="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
+        <front>
+          <title>
+          <abstract><t>Scalable Vector Graphics (SVG) is an XML-based vector image 
+          format for two-dimensional graphics with support for interactivity and animation. 
+          The SVG specification is an open standard developed by the World Wide Web 
+          Consortium (W3C) since 1999.</t></abstract>
+        </front>
+      </reference>
     	<reference anchor="HTTP-Archive-Trends"
         target="http://httparchive.org/trends.php?s=All&amp;minlabel=Nov+15+2010&amp;maxlabel=Feb+15+2015#perFonts">
     		<front>
