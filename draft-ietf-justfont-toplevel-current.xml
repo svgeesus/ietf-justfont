@@ -625,7 +625,9 @@
 <organization>International Organization for Standardization</organization>
 </author>
 <date month="10" year="2015" />
-<abstract><t>ISO/IEC 14496-22:2015 specifies the Open Font Format (OFF) specification, the TrueType™ and Compact Font Format (CFF) outline formats, and the TrueType hinting language. Many references to both TrueType and PostScript exist throughout this document, as Open Font Format fonts combine the two technologies</t></abstract>
+<abstract><t>ISO/IEC 14496-22:2015 specifies the Open Font Format (OFF) specification, the TrueType™ and Compact Font Format (CFF) 
+<xref target="cff-wiki"/> 
+outline formats, and the TrueType hinting language. Many references to both TrueType and PostScript exist throughout this document, as Open Font Format fonts combine the two technologies</t></abstract>
 </front>
 <seriesInfo name="ISO" value="Standard 14496-22" />
 </reference>
@@ -670,6 +672,16 @@
 
 	</references>
 	<references  title='Informative References'>
+    <reference anchor="cff-wiki" target="https://en.wikipedia.org/wiki/PostScript_fonts#Compact_Font_Format">
+        <front>
+          <title>
+          <abstract><t>Compact Font Format (also known as CFF font format, Type 2 font 
+          format, or CFF/Type 2 font format) is 
+          a lossless compaction of the Type 1 format using Type 2 charstrings.
+          The PostScript or Type 1 flavor of OpenType fonts, also called 
+          OpenType CFF, contains glyph outlines and hints in a CFF table</t></abstract>
+        </front>
+      </reference>
       <reference anchor="opentype-wiki" target="https://en.wikipedia.org/wiki/OpenType">
         <front>
           <title>
