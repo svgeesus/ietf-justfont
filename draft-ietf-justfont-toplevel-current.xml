@@ -675,7 +675,7 @@ outline formats, and the TrueType hinting language. Many references to both True
     <reference anchor="cff-wiki" target="https://en.wikipedia.org/wiki/PostScript_fonts#Compact_Font_Format">
         <front>
           <title>CFF</title>
-          <author/>
+          <author><organization/></author>
           <date/>
           <abstract><t>Compact Font Format (also known as CFF font format, Type 2 font 
           format, or CFF/Type 2 font format) is 
@@ -687,7 +687,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       <reference anchor="opentype-wiki" target="https://en.wikipedia.org/wiki/OpenType">
         <front>
           <title>OpenType</title>
-          <author/>
+          <author><organization/></author>
           <date/>
           <abstract><t>OpenType is a format for scalable computer fonts. It was built 
           on its predecessor TrueType, retaining TrueType's basic structure and adding 
@@ -697,7 +697,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       <reference anchor="postscript-wiki" target="">
         <front>
           <title>PostScript</title>
-          <author/>
+          <author><organization/></author>
           <date/>
           <abstract><t>PostScript (PS) is a computer language for creating vector 
           graphics. It is a dynamically typed, concatenative programming language and 
@@ -708,7 +708,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       <reference anchor="truetype-wiki" target="https://en.wikipedia.org/wiki/TrueType">
         <front>
           <title>TrueType</title>
-          <author/>
+          <author><organization/></author>
           <date/>
           <abstract><t>TrueType is an outline font standard developed by Apple and Microsoft 
           in the late 1980s as a competitor to Adobe's Type 1 fonts used in 
@@ -718,7 +718,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       <reference anchor="svg-wiki" target="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
         <front>
           <title>SVG</title>
-          <author/>
+          <author><organization/></author>
           <date/>
           <abstract><t>Scalable Vector Graphics (SVG) is an XML-based vector image 
           format for two-dimensional graphics with support for interactivity and animation. 
