@@ -674,7 +674,7 @@ outline formats, and the TrueType hinting language. Many references to both True
 	<references  title='Informative References'>
     <reference anchor="cff-wiki" target="https://en.wikipedia.org/wiki/PostScript_fonts#Compact_Font_Format">
         <front>
-          <title>
+          <title>CFF</title>
           <abstract><t>Compact Font Format (also known as CFF font format, Type 2 font 
           format, or CFF/Type 2 font format) is 
           a lossless compaction of the Type 1 format using Type 2 charstrings.
@@ -684,7 +684,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       </reference>
       <reference anchor="opentype-wiki" target="https://en.wikipedia.org/wiki/OpenType">
         <front>
-          <title>
+          <title>OpenType</title>
           <abstract><t>OpenType is a format for scalable computer fonts. It was built 
           on its predecessor TrueType, retaining TrueType's basic structure and adding 
           many intricate data structures for prescribing typographic behavior. </t></abstract>
@@ -692,7 +692,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       </reference>
       <reference anchor="postscript-wiki" target="">
         <front>
-          <title>
+          <title>PostScript</title>
           <abstract><t>PostScript (PS) is a computer language for creating vector 
           graphics. It is a dynamically typed, concatenative programming language and 
           was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, 
@@ -701,7 +701,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       </reference>
       <reference anchor="truetype-wiki" target="https://en.wikipedia.org/wiki/TrueType">
         <front>
-          <title>
+          <title>TrueType</title>
           <abstract><t>TrueType is an outline font standard developed by Apple and Microsoft 
           in the late 1980s as a competitor to Adobe's Type 1 fonts used in 
           PostScript. </t></abstract>
@@ -709,7 +709,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       </reference>
       <reference anchor="svg-wiki" target="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
         <front>
-          <title>
+          <title>SVG</title>
           <abstract><t>Scalable Vector Graphics (SVG) is an XML-based vector image 
           format for two-dimensional graphics with support for interactivity and animation. 
           The SVG specification is an open standard developed by the World Wide Web 
