@@ -154,7 +154,7 @@
       engine) to process it as font data, which in turn may require certain level of hardware capabilities such
       as certain levels of CPU performance and available memory. The "font" media type does not provide
       any specific information about the underlying data format and how the font information should be
-      interpreted - the subtypes defined within a "font" tree will name the specific font formats.
+      interpreted - the subtypes defined within a "font" tree name the specific font formats.
       Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations
       may pass unrecognized subtypes to a common font-handling system, if such a system is available.</t>
   </section>
