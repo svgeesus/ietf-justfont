@@ -54,10 +54,12 @@
       outlines of the glyphs are described, and the presentation system renders the outline in
       the desired position and size.</t>
     <t>
+    Over time, a number of standard formats for recording font
+    descriptions have evolved.  
       This document defines a new top-level Internet Media Type "font" according to Section 4.2.7
 	  of <xref target="RFC6838"/>. This top-level type indicates that the content specifies
 	  font data. Under this top-level type, different representation formats of fonts may be
-	  registered (e.g. bitmap or outline formats).</t>
+	  registered.</t>
       <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
       NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
       "OPTIONAL" in this document are to be interpreted as described in
