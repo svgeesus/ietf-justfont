@@ -131,7 +131,7 @@
       of the glyph outline conversion system and have no access outside the font rendering engine, hint
       instructions can be, however, quite complex, and a maliciously designed complex font could cause
       undue resource consumption (e.g. memory or CPU cycles) on a machine interpreting it. Indeed, fonts
-      are sufficiently complex, and most (if not all) interpreters cannot be completely protected from
+      are sufficiently complex that most (if not all) interpreters cannot be completely protected from
       malicious fonts without undue performance penalties.</t>
 
     <t>Widespread use of fonts as necessary components of visual content presentation warrants that
