@@ -142,11 +142,12 @@
       confidentiality protection internally; if needed, such protection should be provided externally.</t>
   </section>
   <section title="IANA Considerations ">
-  <t>This specification requires IANA to modify the rules for the existing Internet Media Types
-  registry by adding a new font top-level type in the standards tree, updating the media types 
-  registration form <xref target="Media-Type-Registration"/>, and registering several
-  subtypes.</t>
-  </section>
+  <t>This specification registers a new top-level type, "font", in the
+   standards tree; adds it as an alternative value of "Type Name" in the
+   media types registration form  <xref target="Media-Type-Registration"/>; and
+   registers several subtypes for it.
+  </t>
+
 <section title="Definition and Encoding">
     <t>The "font" as the primary media content type indicates that the content identified by it requires
       certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping
@@ -162,6 +163,7 @@
       serve as examples for future registrations.</t>
     <t>For each subtype, an @font-face format identifer is defined. This is for use with the @font-face
     src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.</t>
+
   <section title="Generic SFNT Font Type">
   <t>
   <list style="hanging">
@@ -596,6 +598,7 @@
 
    </section>
    </section>
+  </section>
 
    <section title="New Registrations">
     <t>New font formats should be registered using the online form <xref target="Media-Type-Registration"/>. 
