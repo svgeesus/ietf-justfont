@@ -151,7 +151,7 @@
 <section title="Definition and Encoding">
     <t>The "font" as the primary media content type indicates that the content identified by it requires
       certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping
-      engine) to process font data, which in turn may require certain level of hardware capabilities such
+      engine) to process it as font data, which in turn may require certain level of hardware capabilities such
       as certain levels of CPU performance and available memory. The "font" media type does not provide
       any specific information about the underlying data format and how the font information should be
       interpreted - the subtypes defined within a "font" tree will name the specific font formats.
