@@ -88,7 +88,7 @@
       actual use of web fonts continues to increase. The members of the W3C WebFonts WG concluded that
       the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated
       (correctly) with great caution with respect to viruses and other active code. Secondly, the lack
-      of a top-level type means that there is no opportunity to have a common set of optional attributes,
+      of a top-level type means that there is no opportunity to have a common set of optional parameters,
       such as are specified here. Third, fonts have a unique set of licensing and usage restrictions,
       which makes it worthwhile to identify this general category with a unique top-level type.</t>
 
