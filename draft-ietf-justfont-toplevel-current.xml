@@ -158,8 +158,8 @@
       Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations
       may pass unrecognized subtypes to a common font-handling system, if such a system is available.</t>
   </section>
-<section title="Defined Subtypes">
-    <t>In this section the initial entries under the top-level 'font' MIME type are documented. They also
+<section title="Subtype Registrations">
+    <t>In this section the initial entries under the top-level 'font' media type are specified. They also
       serve as examples for future registrations.</t>
     <t>For each subtype, an @font-face format identifer is defined. This is for use with the @font-face
     src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.</t>
