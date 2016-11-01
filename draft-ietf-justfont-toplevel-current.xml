@@ -118,7 +118,7 @@
        and OFF <xref target="opentype-wiki"/>, SIL Graphite,
       WOFF, etc.) are based on the table-based SFNT (scalable font) format which is extremely
       flexible, highly extensible and offers an opportunity to introduce additional table structures when
-      needed, in a way that would not affect existing font rendering engines and text layout implementations.
+      needed, in an upward-compatible way that would not affect existing font rendering engines and text layout implementations.
       However, this very extensibility may present specific security concerns – the flexibility and ease
       of adding new data structures makes it easy for any arbitrary data to be hidden inside a font file.
       There is a significant risk that the flexibility of font data structures may be exploited to hide
