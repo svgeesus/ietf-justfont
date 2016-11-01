@@ -95,7 +95,7 @@
     <t>The W3C WebFonts WG decided <xref target="WG-tlt"/> that the situation can be significantly improved if a set of font
       media types is registered using "font" as a dedicated top-level type. Based on the data analysis
       presented above, we conclude that it is the presence of simple and highly intuitive media types
-      for images that caused the widespread adoption of IANA's recommendations, where the correct
+      for images that caused their widespread adoption, where the correct
       usage of existing media types reaches over 97% for all subtypes in the "image" tree. The WG
       considers that, considering a rapid adoption of fonts on the web, the registration of the top-level
       media type for fonts along with the intuitive set of subtypes that reflect popular and widely used
