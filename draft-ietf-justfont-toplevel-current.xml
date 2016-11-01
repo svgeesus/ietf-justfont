@@ -92,7 +92,7 @@
       such as are specified here. Third, fonts have a unique set of licensing and usage restrictions,
       which makes it worthwhile to identify this general category with a unique top-level type.</t>
 
-    <t>The W3C WebFonts WG decided that the situation can be significantly improved if a set of font
+    <t>The W3C WebFonts WG decided <xref target="WG-tlt"/> that the situation can be significantly improved if a set of font
       media types is registered using "font" as a dedicated top-level type. Based on the data analysis
       presented above, we conclude that it is the presence of simple and highly intuitive media types
       for images that caused the widespread adoption of IANA's recommendations, where the correct
@@ -761,6 +761,16 @@ outline formats, and the TrueType hinting language. Many references to both True
     			</t></abstract>
     		</front>
     	</reference>
+      <reference anchor="W3C-tlt" target="https://www.w3.org/Fonts/WG/track/actions/164">
+        <front>
+          <title>ACTION-164: Bring widely used top-level-type to w3c-ietf liaison</title>
+          <author><organization>W3C</Organization> </author>
+          <date year="2015"/>
+          <abstract><t>Following discussion at several phone calls and face to face meetings, 
+          the W3C WebFonts Working group decided that the widely used but unregistered font/* top-level type
+          should be standardized, and created this action item to track it.</t></abstract>
+        </front>
+      </reference>
       <reference anchor="Media-Type-Registration" target="http://www.iana.org/form/media-types">
         <front>
         <title>Application for a Media Type</title>
