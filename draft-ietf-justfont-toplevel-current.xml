@@ -67,7 +67,7 @@
 </section>
 <section title="Background and Justification">
     <t>Historically there has not been a registration of formats for fonts. More recently, there
-      have been several representation formats registered as MIME subtypes under the "application"
+      have been several representation formats registered as media subtypes under the "application"
       top-level type (for example, application/font-woff).  
       However, with the rapid adoption of web fonts (based on the data
       from HTTP Archive <xref target="HTTP-Archive-Trends"/>
