@@ -30,7 +30,7 @@
 </front>
 <middle>
 
-<section title="Specification development" anchor="issues">
+<section title="Specification Development" anchor="issues">
 	<t>This section is non-normative. The source for this specification is
 	<eref target="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</eref>.
 
@@ -97,7 +97,7 @@
       data formats would further stimulate the adoption of web fonts, significantly simplify web server
       configuration process and facilitate the proper use of IANA media type recommendations.</t>
 </section>
-<section title="Security considerations">
+<section title="Security Considerations">
     <t>Fonts are interpreted data structures that represent collections of different tables containing
       data that represent different types of information, including glyph outlines in various formats,
       hinting instructions, metrics and layout information for multiple languages and writing systems,
@@ -142,7 +142,7 @@
   registration form <xref target="Media-Type-Registration"/>, and registering several
   subtypes.</t>
   </section>
-<section title="Definition and encoding">
+<section title="Definition and Encoding">
     <t>The "font" as the primary media content type indicates that the content identified by it requires
       certain graphic subsystem such as font rendering engine (and, in some cases, text layout and shaping
       engine) to process font data, which in turn may require certain level of hardware capabilities such
@@ -152,12 +152,12 @@
       Unrecognized sub-types of "font" should be treated as "application/octet-stream". Implementations
       may pass unrecognized subtypes to a common font-handling system, if such a system is available.</t>
   </section>
-<section title="Defined subtypes">
+<section title="Defined Subtypes">
     <t>In this section the initial entries under the top-level 'font' MIME type are documented. They also
       serve as examples for future registrations.</t>
     <t>For each subtype, an @font-face format identifer is defined. This is for use with the @font-face
     src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.</t>
-  <section title="Generic SFNT font type">
+  <section title="Generic SFNT Font Type">
   <t>
   <list style="hanging">
     <t hangText="Type name:">font</t>
@@ -238,7 +238,7 @@
   </section>
 
 
-  <section title="TTF font type">
+  <section title="TTF Font Type">
   <t>
   <list style="hanging">
     <t hangText="Type name:">font</t>
@@ -313,7 +313,7 @@
 
 
 
-  <section title="OTF font type">
+  <section title="OTF Font Type">
   <t>
   <list style="hanging">
     <t hangText="Type name:">font</t>
@@ -395,7 +395,7 @@
   </t>
   </section>
 
-  <section title="Collection font type">
+  <section title="Collection Font Type">
   <t>
   <list style="hanging">
     <t hangText="Type name:">font</t>
