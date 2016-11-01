@@ -172,7 +172,7 @@
     <t hangText="Required parameters:">None.</t>
     <t hangText="Optional parameters:">
       <list style="hanging">
-    	<t hangText="1) Name: Outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
+    	<t hangText="1) Name: outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
   	This parameter can be used to specify the type of outlines supported by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="postscript-wiki"/>,
@@ -181,7 +181,7 @@
       this optional parameter is a list containing one or more items, separated by commas, with
       optional whitespace. Order in the list is not significant.</t>
 
-    <t hangText="2) Name: Layout"></t>
+    <t hangText="2) Name: layout"></t>
     <t>Value: OTL, AAT, SIL <vspace blankLines="1" />
       This parameter identifies the type of implemented support for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
@@ -257,7 +257,7 @@
   <t hangText="Optional parameters:">
     <list style="hanging">
 
-    <t hangText="Name: Layout">Value: OTL, AAT, SIL<vspace blankLines="1" />
+    <t hangText="Name: layout">Value: OTL, AAT, SIL<vspace blankLines="1" />
 
       This parameter identifies the type of support mechanism for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
@@ -334,7 +334,7 @@
   <t hangText="Optional parameters">
   <list style="hanging">
 
-    <t hangText="Name: Outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
+    <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
 
     This parameter can be used to specify the type of outlines supported by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
@@ -416,7 +416,7 @@
   <t hangText="Optional parameters">
   <list style="hanging">
 
-    <t hangText="Name: Outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
+    <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
 
     This parameter can be used to specify the type of outlines supported by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
