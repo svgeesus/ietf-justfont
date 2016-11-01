@@ -31,6 +31,9 @@
 <middle>
 
 <section title="Specification Development" anchor="issues">
+  <t>
+[Note to the RFC Editor: Please remove this section upon publication.]
+	</t>
 	<t>This section is non-normative. The source for this specification is
 	<eref target="https://github.com/svgeesus/ietf-justfont">maintained on GitHub</eref>.
 
