@@ -113,11 +113,10 @@
       
       There are many existing, already standardized font table tags
       and formats that allow an unspecified number of entries containing predefined data fields for
-      storage of variable length binary data. Many existing (TrueType <xref target="truetype-wiki"/>, 
-      PostScript <xref target="postscript-wiki"/>, OpenType
-      
+      storage of variable length binary data. Many existing font formats (TrueType 
+      <xref target="truetype-wiki"/>, OpenType
        and OFF <xref target="opentype-wiki"/>, SIL Graphite,
-      WOFF, etc.) font formats are based on the table-based SFNT (scalable font) format which is extremely
+      WOFF, etc.) are based on the table-based SFNT (scalable font) format which is extremely
       flexible, highly extensible and offers an opportunity to introduce additional table structures when
       needed, in a way that would not affect existing font rendering engines and text layout implementations.
       However, this very extensibility may present specific security concerns – the flexibility and ease
@@ -174,7 +173,7 @@
     	<t hangText="1) Name: Outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
   	This parameter can be used to specify the type of outlines supported by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
-      format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
+      format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="postscript-wiki"/>,
       and value SVG <xref target="svg-wiki"/>shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
       this optional parameter is a list containing one or more items, separated by commas, with
