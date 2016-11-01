@@ -224,6 +224,8 @@
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="@font-face Format:">none.</t>
     <t hangText="Fragment Identifiers">none.</t>
+    <t hangText="Deprecated Alias:">The existing registration application/font-sfnt is 
+    deprecated in favor of font/sfnt.</t>
   </list>
   </t>
 
