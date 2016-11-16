@@ -188,7 +188,7 @@
     	<t hangText="1) Name: outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
   	This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
-      format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="postscript-wiki"/>,
+      format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="cff-wiki"/>,
       and value SVG <xref target="svg-wiki"/>shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
       this optional parameter is a list containing one or more items, separated by commas, with
@@ -710,17 +710,7 @@ outline formats, and the TrueType hinting language. Many references to both True
           many intricate data structures for prescribing typographic behavior. </t></abstract>
         </front>
       </reference>
-      <reference anchor="postscript-wiki" target="">
-        <front>
-          <title>PostScript</title>
-          <author><organization/></author>
-          <date/>
-          <abstract><t>PostScript (PS) is a computer language for creating vector 
-          graphics. It is a dynamically typed, concatenative programming language and 
-          was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, 
-          Ed Taft and Bill Paxton from 1982 to 1984.</t></abstract>
-        </front>
-      </reference>
+      
       <reference anchor="truetype-wiki" target="https://en.wikipedia.org/wiki/TrueType">
         <front>
           <title>TrueType</title>
