@@ -282,17 +282,17 @@
 
    <t hangText="Encoding considerations:">Binary.</t>
 
-    <t hangText="Interoperability considerations:">As was noted in the first paragraph
-    of the "Security considerations" section, the same font
-      format can be used to encode fonts supporting different types of outlines and/or text shaping and
-      layout mechanisms. Existing font rendering engine implementations may not be able to process some
-      of the particular layout table formats, and downloading a font resource that contains unsupported
-      text shaping mechanism would result in inability of applications to display text properly.
-      Therefore, it would be extremely useful to clearly identify the supported text shaping and layout
-      data within a font using an optional parameter, and allow applications to make decisions about
-      downloading a particular font resource sooner.
-      Please note that as new text shaping mechanisms may be defined in the future, the set of allowed
-      values for the optional parameter defined by this section may be extended.</t>
+<t hangText="Interoperability considerations:">As it was noted in the first paragraph of
+    the "Security considerations" section, 
+    a single font file can contain encoding of the same glyphs using several different 
+    representations, e.g., both TrueType and PostScript (CFF) outlines. 
+    Existing font rendering engines may not be able
+      to process some of the particular outline formats, and downloading a font resource that contains
+      only unsupported glyph data format would be futile.
+      Therefore, it is useful to clearly identify the format of the glyph outline data
+      within a font using an optional parameter, and allow applications to make decisions about
+      downloading a particular font resource sooner. Similarly, another optional parameter
+      identifies the type of text shaping and layout mechanism that is provided by a font. </t>
 
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
@@ -360,17 +360,17 @@
 
    <t hangText="Encoding considerations:">Binary.</t>
 
-    <t hangText="Interoperability considerations:">As it was noted in the first paragraph
-    of the "Security considerations" section, the
-      same font format can be used to encode fonts with different types of glyph data represented
-      as either TrueType, PostScript (CFF) or SVG outlines. Existing font rendering engines
-      may not be able to process some of the particular outline formats, and downloading a font
-      resource that contains unsupported glyph data format would result in inability of application
-      to render and display text. Therefore, it would be extremely useful to clearly identify
-      the format of the glyph outline data within a font using an optional parameter, and
-      allow applications to make decisions about downloading a particular font resource sooner.
-      Please note that as new outline formats may be defined in the future, the set of allowed
-      values for the optional parameter defined in this section may be extended.</t>
+    <t hangText="Interoperability considerations:">As it was noted in the first paragraph of
+    the "Security considerations" section, 
+    a single font file can contain encoding of the same glyphs using several different 
+    representations, e.g., both TrueType and PostScript (CFF) outlines. 
+    Existing font rendering engines may not be able
+      to process some of the particular outline formats, and downloading a font resource that contains
+      only unsupported glyph data format would be futile.
+      Therefore, it is useful to clearly identify the format of the glyph outline data
+      within a font using an optional parameter, and allow applications to make decisions about
+      downloading a particular font resource sooner. Similarly, another optional parameter
+      identifies the type of text shaping and layout mechanism that is provided by a font. </t>
 
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
@@ -442,17 +442,17 @@
 
    <t hangText="Encoding considerations:">Binary.</t>
 
-    <t hangText="Interoperability considerations:">As it was noted in the first paragraph
-    of the "Security considerations" section, the
-      same font format can be used to encode fonts with different types of glyph data represented
-      as either TrueType, PostScript (CFF) or SVG outlines. Existing font rendering engines
-      may not be able to process some of the particular outline formats, and downloading a font
-      resource that contains unsupported glyph data format would result in inability of application
-      to render and display text. Therefore, it would be extremely useful to clearly identify
-      the format of the glyph outline data within a font using an optional parameter, and
-      allow applications to make decisions about downloading a particular font resource sooner.
-      Please note that as new outline formats may be defined in the future, the set of allowed
-      values for the optional parameter defined in this section may be extended.</t>
+    <t hangText="Interoperability considerations:">As it was noted in the first paragraph of
+    the "Security considerations" section, 
+    a single font file can contain encoding of the same glyphs using several different 
+    representations, e.g., both TrueType and PostScript (CFF) outlines. 
+    Existing font rendering engines may not be able
+      to process some of the particular outline formats, and downloading a font resource that contains
+      only unsupported glyph data format would be futile.
+      Therefore, it is useful to clearly identify the format of the glyph outline data
+      within a font using an optional parameter, and allow applications to make decisions about
+      downloading a particular font resource sooner. Similarly, another optional parameter
+      identifies the type of text shaping and layout mechanism that is provided by a font. </t>
 
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
