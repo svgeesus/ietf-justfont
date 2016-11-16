@@ -200,7 +200,7 @@
     Existing font rendering engines may not be able
       to process some of the particular outline formats, and downloading a font resource that contains
       only unsupported glyph data format would be futile.
-      Therefore, it would be extremely useful to clearly identify the format of the glyph outline data
+      Therefore, it is useful to clearly identify the format of the glyph outline data
       within a font using an optional parameter, and allow applications to make decisions about
       downloading a particular font resource sooner. Similar, another optional parameter is suggested
       to identify the type of text shaping and layout mechanism that is provided by a font. Please
