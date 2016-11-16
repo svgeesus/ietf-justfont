@@ -586,11 +586,11 @@
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3c.woff2</spanx> </t>
     <t hangText="@font-face Format:">woff2</t>
-    <t hangText="Fragment Identifiers">For collections encoded as WOFF 2.0. A positive integer.
-    For example, #2 refers to the second font
-    in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font
-    in the collection (or the only font, if it is not a collection). If a fragment is specified, and
-    the WOFF does not encode a collection, the fragment is ignored.</t>
+    <t hangText="Fragment Identifiers">If the WOFF is not a collection, the only
+      fragment identifier is "1", which specifies the only font
+      contained in the object.  If the WOFF is a collection, an
+      integer (1-origin) specifying a font contained in the
+      collection.</t>
   </list>
   </t>
 
