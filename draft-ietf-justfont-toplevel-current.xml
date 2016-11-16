@@ -194,9 +194,10 @@
    <t hangText="Encoding considerations:">Binary.</t>
 
     <t hangText="Interoperability considerations:">As it was noted in the first paragraph of
-    the "Security considerations" section, the same font
-      format wrapper can be used to encode fonts with different types of glyph data represented as
-      either TrueType or PostScript (CFF) outlines. Existing font rendering engines may not be able
+    the "Security considerations" section, 
+    a single font file can contain encoding of the same glyphs using several different 
+    representations, e.g., both TrueType and PostScript (CFF) outlines. 
+    Existing font rendering engines may not be able
       to process some of the particular outline formats, and downloading a font resource that contains
       unsupported glyph data format would result in inability of application to render and display text.
       Therefore, it would be extremely useful to clearly identify the format of the glyph outline data
