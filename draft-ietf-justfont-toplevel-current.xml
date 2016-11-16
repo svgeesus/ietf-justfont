@@ -83,7 +83,7 @@
       such as "application/x-font-ttf".</t>
 
     <t>Contrary to the expectations of the W3C WebFonts Working Group which developed WOFF, 
-      the officially defined IANA subtypes such as "application/font-woff"
+      the officially defined media types such as "application/font-woff"
       and "application/font-sfnt" see a very limited use - their adoption rates trail far behind as the
       actual use of web fonts continues to increase. The members of the W3C WebFonts WG concluded that
       the use of "application" top-level type is not ideal. First, the "application" sub-tree is treated
@@ -100,7 +100,7 @@
       considers that, considering a rapid adoption of fonts on the web, the registration of the top-level
       media type for fonts along with the intuitive set of subtypes that reflect popular and widely used
       data formats would further stimulate the adoption of web fonts, significantly simplify web server
-      configuration process and facilitate the proper use of IANA media type recommendations.</t>
+      configuration process and facilitate the proper use of media types for fonts.</t>
 </section>
 <section title="Security Considerations">
     <t>Fonts are interpreted data structures that represent collections of different tables containing
