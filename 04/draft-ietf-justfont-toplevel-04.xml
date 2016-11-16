@@ -763,7 +763,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       <reference anchor="W3C-tlt" target="https://www.w3.org/Fonts/WG/track/actions/164">
         <front>
           <title>ACTION-164: Bring widely used top-level-type to w3c-ietf liaison</title>
-          <author><organization>W3C</Organization> </author>
+          <author><organization>W3C</organization> </author>
           <date year="2015"/>
           <abstract><t>Following discussion at several phone calls and face to face meetings, 
           the W3C WebFonts Working group decided that the widely used but unregistered font/* top-level type
