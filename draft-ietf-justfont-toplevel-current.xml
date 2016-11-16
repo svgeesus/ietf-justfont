@@ -221,7 +221,7 @@
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF) specification
     <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
 
-    <t hangText="Applications that use this media type:">Any and all applications that are able to create, edit or display textual media content.</t>
+    <t hangText="Applications that use this media type:">All applications that are able to create, edit or display textual media content.</t>
 
   <t hangText="Additional information:">
 
@@ -297,7 +297,7 @@
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
 
-    <t hangText="Applications that use this media type:">Any and all applications that are able to create, edit or display textual media content.</t>
+    <t hangText="Applications that use this media type:">All applications that are able to create, edit or display textual media content.</t>
 
   <t hangText="Additional information:">
 
@@ -375,7 +375,7 @@
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
 
-    <t hangText="Applications that use this media type:">Any and all applications that are able
+    <t hangText="Applications that use this media type:">All applications that are able
     to create, edit or display textual media content.</t>
 
   <t hangText="Additional information:">
@@ -457,7 +457,7 @@
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF)
     specification <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
 
-    <t hangText="Applications that use this media type:">Any and all applications that are able
+    <t hangText="Applications that use this media type:">All applications that are able
     to create, edit or display textual media content.</t>
 
   <t hangText="Additional information:">
