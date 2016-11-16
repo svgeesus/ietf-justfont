@@ -760,7 +760,7 @@ outline formats, and the TrueType hinting language. Many references to both True
     			</t></abstract>
     		</front>
     	</reference>
-      <reference anchor="W3C-tlt" target="https://www.w3.org/Fonts/WG/track/actions/164">
+      <reference anchor="WG-tlt" target="https://www.w3.org/Fonts/WG/track/actions/164">
         <front>
           <title>ACTION-164: Bring widely used top-level-type to w3c-ietf liaison</title>
           <author><organization>W3C</organization> </author>
