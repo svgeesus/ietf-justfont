@@ -199,7 +199,7 @@
     representations, e.g., both TrueType and PostScript (CFF) outlines. 
     Existing font rendering engines may not be able
       to process some of the particular outline formats, and downloading a font resource that contains
-      unsupported glyph data format would result in inability of application to render and display text.
+      only unsupported glyph data format would be futile.
       Therefore, it would be extremely useful to clearly identify the format of the glyph outline data
       within a font using an optional parameter, and allow applications to make decisions about
       downloading a particular font resource sooner. Similar, another optional parameter is suggested
