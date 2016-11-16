@@ -173,7 +173,7 @@
     <t hangText="Optional parameters:">
       <list style="hanging">
     	<t hangText="1) Name: outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
-  	This parameter can be used to specify the type of outlines supported by the font.
+  	This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="postscript-wiki"/>,
       and value SVG <xref target="svg-wiki"/>shall be used to identify fonts that include SVG outlines. TTF, CFF
@@ -186,7 +186,7 @@
       This parameter identifies the type of implemented support for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
-      shaping and layout mechanism may be supported by the same font file, therefore,
+      shaping and layout mechanism may be provided by the same font file, therefore,
       this optional parameter is a list containing one or more items, separated by commas, with
       optional whitespace. Order in the list is not significant.</t>
    </list></t>
@@ -202,7 +202,7 @@
       Therefore, it would be extremely useful to clearly identify the format of the glyph outline data
       within a font using an optional parameter, and allow applications to make decisions about
       downloading a particular font resource sooner. Similar, another optional parameter is suggested
-      to identify the type of text shaping and layout mechanism that is supported by a font. Please
+      to identify the type of text shaping and layout mechanism that is provided by a font. Please
       note that as new outline formats and text shaping mechanisms may be defined in the future, the
       set of allowed values for two optional parameters defined by this section may be extended.</t>
 
@@ -262,7 +262,7 @@
       This parameter identifies the type of support mechanism for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
-      shaping and layout mechanism may be supported by the same font file, therefore,
+      shaping and layout mechanism may be provided by the same font file, therefore,
       this optional parameter is a list containing one or more items, separated by commas, with
       optional whitespace. Order in the list is not significant.</t>
       </list>
@@ -336,7 +336,7 @@
 
     <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
 
-    This parameter can be used to specify the type of outlines supported by the font.
+    This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
       and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
@@ -418,7 +418,7 @@
 
     <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
 
-    This parameter can be used to specify the type of outlines supported by the font.
+    This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
       and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
