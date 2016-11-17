@@ -672,7 +672,7 @@ outline formats, and the TrueType hinting language. Many references to both True
     <format type="HTML" target="http://www.w3.org/TR/2012/REC-WOFF-20121213"/>
   </reference>
 
-		<reference anchor="W3C.WD-WOFF2-20150414" target="https://www.w3.org/TR/2016/CR-WOFF2-20160315/">
+		<reference anchor="W3C.CR-WOFF2-20160315" target="https://www.w3.org/TR/2016/CR-WOFF2-20160315/">
       <front><title>WOFF File Format 2.0</title>
       <author initials="V." surname="Levantovsky" fullname="Vladimir Levantovsky"><organization/></author>
       <author initials="R." surname="Levien" fullname="Raph Levien"><organization/></author>
@@ -683,7 +683,7 @@ outline formats, and the TrueType hinting language. Many references to both True
       preprocessing step and improved entropy coding, compared to the Flate compression used in
       WOFF 1.0.</t>
     </abstract>
-		</front><seriesInfo name="World Wide Web Consortium WD" value="WD-WOFF2-20150414"/>
+		</front><seriesInfo name="World Wide Web Consortium CR" value="CR-WOFF2-20160315"/>
     <format type="HTML" target="https://www.w3.org/TR/2016/CR-WOFF2-20160315/"/></reference>
 
 	</references>
