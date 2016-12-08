@@ -162,7 +162,7 @@
   <section title="Registration Procedure">
     <t>New font formats should be registered using the online form <xref target="Media-Type-Registration"/>. 
     RFC 6838 <xref target="RFC6838"/> should be consulted on registration procedures. In particular
-    the font specification must be freely available. Also,
+    the font specification should be freely available. Also,
     an @font-face format should be supplied and,
     if used, a definition of the fragment identifier syntax for the new type.</t>
     <t>Note that new parameter sub-values may be defined in the future.  If an
@@ -185,23 +185,23 @@
     <t hangText="Required parameters:">None.</t>
     <t hangText="Optional parameters:">
       <list style="hanging">
-    	<t hangText="1) Name: outlines">Value: TTF, CFF, SVG <vspace blankLines="1" />
+    	<t hangText="1) Name: outlines">Values: a comma-separated subset of: TTF, CFF, SVG <vspace blankLines="1" />
   	This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines <xref target="cff-wiki"/>,
       and value SVG <xref target="svg-wiki"/>shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
-      this optional parameter is a list containing one or more items, separated by commas, with
-      optional whitespace. Order in the list is not significant.</t>
+      this optional parameter is a list containing one or more items, separated by commas. 
+      Order in the list is not significant.</t>
 
     <t hangText="2) Name: layout"></t>
-    <t>Value: OTL, AAT, SIL <vspace blankLines="1" />
+    <t>Values: a comma-separated subset of: OTL, AAT, SIL <vspace blankLines="1" />
       This parameter identifies the type of implemented support for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
       shaping and layout mechanism may be provided by the same font file, therefore,
-      this optional parameter is a list containing one or more items, separated by commas, with
-      optional whitespace. Order in the list is not significant.</t>
+      this optional parameter is a list containing one or more items, separated by commas. 
+      Order in the list is not significant.</t>
    </list></t>
 
    <t hangText="Encoding considerations:">Binary.</t>
@@ -270,14 +270,14 @@
   <t hangText="Optional parameters:">
     <list style="hanging">
 
-    <t hangText="Name: layout">Value: OTL, AAT, SIL<vspace blankLines="1" />
+    <t hangText="Name: layout">Values: a comma-separated subset of: OTL, AAT, SIL<vspace blankLines="1" />
 
       This parameter identifies the type of support mechanism for advanced text layout
       features. The predefined values "OTL", "AAT" and "SIL" respectively indicate support
       for OpenType text layout, Apple Advanced Typography or Graphite SIL. More than one
       shaping and layout mechanism may be provided by the same font file, therefore,
-      this optional parameter is a list containing one or more items, separated by commas, with
-      optional whitespace. Order in the list is not significant.</t>
+      this optional parameter is a list containing one or more items, separated by commas.
+      Order in the list is not significant.</t>
       </list>
       </t>
 
@@ -348,15 +348,15 @@
   <t hangText="Optional parameters">
   <list style="hanging">
 
-    <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
+    <t hangText="Name: outlines">Values: a comma-separated subset of: TTF, CFF, SVG<vspace blankLines="1" />
 
     This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
       and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
-      this optional parameter is a list containing one or more items, separated by commas, with
-      optional whitespace. Order in the list is not significant.</t>
+      this optional parameter is a list containing one or more items, separated by commas. 
+      Order in the list is not significant.</t>
    </list>
    </t>
 
@@ -431,15 +431,15 @@
   <t hangText="Optional parameters">
   <list style="hanging">
 
-    <t hangText="Name: outlines">Value: TTF, CFF, SVG<vspace blankLines="1" />
+    <t hangText="Name: outlines">Values: a comma-separated subset of: TTF, CFF, SVG<vspace blankLines="1" />
 
     This parameter can be used to specify the type of outlines provided by the font.
       Value "TTF" shall be used when a font resource contains glyph outlines in TrueType
       format, value "CFF" shall be used to identify fonts containing PostScript/CFF outlines,
       and value SVG shall be used to identify fonts that include SVG outlines. TTF, CFF
       or SVG outlines can be present in various combinations in the same font file, therefore,
-      this optional parameter is a list containing one or more items, separated by commas, with
-      optional whitespace. Order in the list is not significant.</t>
+      this optional parameter is a list containing one or more items, separated by commas.
+      Order in the list is not significant.</t>
    </list>
    </t>
 
