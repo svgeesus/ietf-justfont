@@ -236,6 +236,7 @@
         extension can be used for any OpenType/OFF font, either with TrueType or CFF outlines.</t>
 
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.font</spanx> </t>
     <t hangText="@font-face Format:">none.</t>
     <t hangText="Fragment Identifiers">none.</t>
     <t hangText="Deprecated Alias:">The existing registration application/font-sfnt is 
@@ -312,6 +313,7 @@
         extension may be used for any OpenType/OFF font, either with TrueType or CFF outlines.</t>
 
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.truetype-font</spanx> </t>
     <t hangText="@font-face Format:">truetype</t>
     <t hangText="Fragment Identifiers">none.</t>
   </list>
@@ -395,6 +397,7 @@
         extension can be used for any OpenType/OFF font, either with TrueType, CFF or SVG outlines.</t>
 
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.opentype-font</spanx> </t>
     <t hangText="@font-face Format:">opentype</t>
     <!-- the @font-face format should be defined by reference to css3 fonts -->
     <t hangText="Fragment Identifiers">none.</t>
@@ -475,6 +478,7 @@
       TrueType and OpenType fonts: .ttc </t>
 
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.truetype-collection-​font</spanx> </t>
     <t hangText="@font-face Format:">collection</t>
     <t hangText="Fragment Identifiers">A positive integer. For example, #2 refers to the second font
     in the collection. If a fragment is not specified, it is the same as #1 i.e. the first font
@@ -528,7 +532,7 @@
     contain the "magic number" 0x774F4646 ('wOFF')</t>
     <t hangText="File extension(s):">woff</t>
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
-    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3c.woff</spanx> </t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3.woff</spanx> </t>
     <t hangText="@font-face Format:">woff</t>
     <t hangText="Fragment Identifiers:">none.</t>
     <t hangText="Deprecated Alias:">The existing registration application/font-woff is 
@@ -584,7 +588,7 @@
     "magic number" 0x774F4632 ('wOF2')</t>
     <t hangText="File extension(s):">woff2</t>
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
-    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3c.woff2</spanx> </t>
+    <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3.woff2</spanx> </t>
     <t hangText="@font-face Format:">woff2</t>
     <t hangText="Fragment Identifiers">If the WOFF is not a collection, the only
       fragment identifier is "1", which specifies the only font
