@@ -239,7 +239,7 @@
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.font</spanx> </t>
     <t hangText="@font-face Format:">none.</t>
     <t hangText="Fragment Identifiers">none.</t>
-    <t hangText="Deprecated Alias:">The existing registration application/font-sfnt is 
+    <t hangText="Deprecated Alias:">The existing registration <spanx style="verb">application/font-sfnt</spanx> is 
     deprecated in favor of font/sfnt.</t>
   </list>
   </t>
@@ -535,7 +535,7 @@
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3.woff</spanx> </t>
     <t hangText="@font-face Format:">woff</t>
     <t hangText="Fragment Identifiers:">none.</t>
-    <t hangText="Deprecated Alias:">The existing registration application/font-woff is 
+    <t hangText="Deprecated Alias:">The existing registration <spanx style="verb">application/font-woff</spanx> is 
     deprecated in favor of font/woff.</t>
   </list>
   </t>
