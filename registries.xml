@@ -1,0 +1,36 @@
+<registry xmlns="http://www.iana.org/assignments" id="media-type-sub-parameters">
+  <title>update to MIME Media Type Sub-Parameter Registries</title>
+  	<registry id="font-outlines">
+      <title>Font outline values</title>
+      <xref type="rfc" data="rfcxxx"/>
+      <registration_rule>Specification Required</registration_rule>
+      <record>
+        <value>outlines=TTF</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+      <record>
+        <value>outlines=CFF</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+      <record>
+        <value>outlines=SVG</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+    </registry>
+	<registry id="font-layout">
+      <title>Font layout values</title>
+      <xref type="rfc" data="rfcxxx"/>
+      <registration_rule>Specification Required</registration_rule>
+      <record>
+        <value>layout=OTL</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+      <record>
+        <value>layout=AAT</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+      <record>
+        <value>layout=SIL</value>
+        <xref type="rfc" data="rfcxxx"/>
+      </record>
+    </registry>
