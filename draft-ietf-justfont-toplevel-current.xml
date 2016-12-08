@@ -240,7 +240,7 @@
     <t hangText="@font-face Format:">none.</t>
     <t hangText="Fragment Identifiers">none.</t>
     <t hangText="Deprecated Alias:">The existing registration <spanx style="verb">application/font-sfnt</spanx> is 
-    deprecated in favor of font/sfnt.</t>
+    deprecated in favor of <spanx style="verb">font/sfnt</spanx>.</t>
   </list>
   </t>
 
@@ -536,7 +536,7 @@
     <t hangText="@font-face Format:">woff</t>
     <t hangText="Fragment Identifiers:">none.</t>
     <t hangText="Deprecated Alias:">The existing registration <spanx style="verb">application/font-woff</spanx> is 
-    deprecated in favor of font/woff.</t>
+    deprecated in favor of <spanx style="verb">font/woff</spanx>.</t>
   </list>
   </t>
 
