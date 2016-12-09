@@ -482,9 +482,9 @@
     <t hangText="@font-face Format:">collection</t>
     <t hangText="Fragment Identifiers">A string, no longer than 63 characters and restricted to the 
     printable ASCII subset, codes 33 – 126, except for the 10 characters 
-    '[', ']', '(', ')', '{', '}', '<', '>', '/', '%'. If this string matches one of the PostScript
+    '[', ']', '(', ')', '{', '}', '&lt;', '&gt;', '/', '%'. If this string matches one of the PostScript
     names (name ID=6) <xref target="ISO.14496-22.2015"/> in the name table, that font is selected.
-    For example, <spanx style="verb">#Foo-Bold</span> refers to the font with PostScript name Foo-Bold.
+    For example, <spanx style="verb">#Foo-Bold</spanx> refers to the font with PostScript name Foo-Bold.
     If the name does not match, or if a fragment is not specified, the first font
     in the collection is matched. Note that the order of fonts in collections may change
     as the font is revised, so relying on a particular font in a collection always being first is unwise.</t>
@@ -597,14 +597,13 @@
     <t hangText="@font-face Format:">woff2</t>
     <t hangText="Fragment Identifiers">,A string, no longer than 63 characters and restricted to the 
     printable ASCII subset, codes 33 – 126, except for the 10 characters 
-    '[', ']', '(', ')', '{', '}', '<', '>', '/', '%'. If this string matches one of the PostScript
+    '[', ']', '(', ')', '{', '}', '&lt;', '&gt;', '/', '%'. If this string matches one of the PostScript
     names (name ID=6) <xref target="ISO.14496-22.2015"/> in the name table, that font is selected.
-    For example, <spanx style="verb">#Foo-Bold</span> refers to the font with PostScript name Foo-Bold.
+    For example, <spanx style="verb">#Foo-Bold</spanx> refers to the font with PostScript name Foo-Bold.
     If the name does not match, or if a fragment is not specified, the first font
     in the collection is matched (the only font, if the WOFF does not encode a collection). 
     Note that the order of fonts in collections may change
     as the font is revised, so relying on a particular font in a collection always being first is unwise.</t>
-      </t>
   </list>
   </t>
 
