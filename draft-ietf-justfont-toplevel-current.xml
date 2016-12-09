@@ -173,8 +173,9 @@
 <section title="Subtype Registrations">
     <t>In this section the initial entries under the top-level 'font' media type are specified. They also
       serve as examples for future registrations.</t>
-    <t>For each subtype, an @font-face format identifer is defined. This is for use with the @font-face
-    src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.</t>
+    <t>For each subtype, an @font-face format identifer is listed. This is for use with the @font-face
+    src descriptor, defined by the CSS3 Fonts specification <xref target="W3C.CR-css-fonts-3-20131003"/>.
+    That specification is normative; the identifiers here are informative.</t>
 
   <section title="Generic SFNT Font Type">
   <t>
