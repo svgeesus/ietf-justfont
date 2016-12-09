@@ -162,9 +162,8 @@
   <section title="Registration Procedure">
     <t>New font formats should be registered using the online form <xref target="Media-Type-Registration"/>. 
     RFC 6838 <xref target="RFC6838"/> should be consulted on registration procedures. In particular
-    the font specification should be freely available. Also,
-    an @font-face format should be supplied and,
-    if used, a definition of the fragment identifier syntax for the new type.</t>
+    the font specification should preferably be freely available. If the font format can contain
+    multiple fonts, a fragment identifier syntax should also be defined.</t>
     <t>Note that new parameter sub-values may be defined in the future.  If an
       implementation does not recognize a sub-value in the
       comma-separated list, it should ignore the sub-value and continue
