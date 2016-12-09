@@ -246,9 +246,8 @@ Internet-Draft           The font Top Level Type           December 2016
    New font formats should be registered using the online form
    [Media-Type-Registration].  RFC 6838 [RFC6838] should be consulted on
    registration procedures.  In particular the font specification should
-   be freely available.  Also, an @font-face format should be supplied
-   and, if used, a definition of the fragment identifier syntax for the
-   new type.
+   preferably be freely available.  If the font format can contain
+   multiple fonts, a fragment identifier syntax should also be defined.
 
    Note that new parameter sub-values may be defined in the future.  If
    an implementation does not recognize a sub-value in the comma-
@@ -261,9 +260,10 @@ Internet-Draft           The font Top Level Type           December 2016
    type are specified.  They also serve as examples for future
    registrations.
 
-   For each subtype, an @font-face format identifer is defined.  This is
+   For each subtype, an @font-face format identifer is listed.  This is
    for use with the @font-face src descriptor, defined by the CSS3 Fonts
-   specification [W3C.CR-css-fonts-3-20131003].
+   specification [W3C.CR-css-fonts-3-20131003].  That specification is
+   normative; the identifiers here are informative.
 
 5.3.1.  Generic SFNT Font Type
 
