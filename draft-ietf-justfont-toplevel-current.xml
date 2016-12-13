@@ -159,6 +159,10 @@
       may pass unrecognized subtypes to a common font-handling system, if such a system is available.</t>
   </section>
 
+  <section title="Fragment Identifiers for Font Collections" anchor="fragments">
+
+  </section>
+
   <section title="Registration Procedure">
     <t>New font formats should be registered using the online form <xref target="Media-Type-Registration"/>. 
     RFC 6838 <xref target="RFC6838"/> should be consulted on registration procedures. In particular
@@ -221,7 +225,19 @@
     <t hangText="Published specification:">ISO/IEC 14496-22 "Open Font Format" (OFF) specification
     <xref target="ISO.14496-22.2015"/> being developed by ISO/IEC SC29/WG11.</t>
 
-    <t hangText="Applications that use this media type:">All applications that are able to create, edit or display textual media content.</t>
+    <t hangText="Applications that use this media type:">All applications that are able to create, 
+    edit or display textual media content. </t>
+
+    <t>
+Note that font/sfnt is an abstract type, from which the (widely used in practice) font/ttf and 
+font/otf types are conceptually derived. Use of font/sfnt is likely to be rare in practice, and 
+might be confined to
+<list>
+ <t>uncommon combinations such as font/sfnt; outlines=sil which do not have a shorter type</t>
+<t>cases where a new parameter value is registered</t>
+<t>test cases, experimentation, etc</t>
+</list>
+    </t>
 
   <t hangText="Additional information:">
 
