@@ -160,7 +160,23 @@
   </section>
 
   <section title="Fragment Identifiers for Font Collections" anchor="fragments">
-
+    <t>Fragment identifiers for font collections identify one font in the collection by 
+    the PostScript name (name ID=6) <xref target="ISO.14496-22.2015"/>. This is a string, 
+    no longer than 63 characters and restricted to the 
+    printable ASCII subset, codes 33 – 126, except for the 10 characters 
+    '[', ']', '(', ')', '{', '}', '&lt;', '&gt;', '/', '%' which are forbidden
+    by <xref target="ISO.14496-22.2015"/>. </t>
+    <t>In addition, the following 6 characters could occur in the PostScript name but are 
+    forbidden in fragments by <xref target="RFC3986"/>
+    and thus must be escaped:  '"', '#', '\', '^', '`', '|'.</t>
+    <t>If (following un-escaping) this string matches one of the PostScript
+    names in the name table, that font is selected. For example, <spanx style="verb">#Foo-Bold</spanx> 
+    refers to the font with PostScript name <spanx style="verb">Foo-Bold</spanx>
+    and <spanx style="verb">#Caret%5Estick</spanx> refers to the font with PostScript 
+    name <spanx style="verb">Caret^stick</spanx>.
+    If the name does not match, or if a fragment is not specified, the first font
+    in the collection is matched. Note that the order of fonts in collections may change
+    as the font is revised, so relying on a particular font in a collection always being first is unwise.</t>
   </section>
 
   <section title="Registration Procedure">
@@ -496,14 +512,7 @@ might be confined to
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">public.truetype-collection-​font</spanx> </t>
     <t hangText="@font-face Format:">collection</t>
-    <t hangText="Fragment Identifiers">A string, no longer than 63 characters and restricted to the 
-    printable ASCII subset, codes 33 – 126, except for the 10 characters 
-    '[', ']', '(', ')', '{', '}', '&lt;', '&gt;', '/', '%'. If this string matches one of the PostScript
-    names (name ID=6) <xref target="ISO.14496-22.2015"/> in the name table, that font is selected.
-    For example, <spanx style="verb">#Foo-Bold</spanx> refers to the font with PostScript name Foo-Bold.
-    If the name does not match, or if a fragment is not specified, the first font
-    in the collection is matched. Note that the order of fonts in collections may change
-    as the font is revised, so relying on a particular font in a collection always being first is unwise.</t>
+    <t hangText="Fragment Identifiers:">See <xref target="fragments"/>.</t>
   </list>
   </t>
 
@@ -576,9 +585,6 @@ might be confined to
   </t>
   </section>
 
-<!-- what type for Collections, and do we define the fragment syntax to refer to individual fonts in the collection here? -->
-
-
   <section title="WOFF 2.0">
   <t>
   <list style="hanging">
@@ -611,15 +617,7 @@ might be confined to
     <t hangText="Macintosh file type code(s):">(no code specified)</t>
     <t hangText="Macintosh Universal Type Identifier code:"><spanx style="verb">org.w3.woff2</spanx> </t>
     <t hangText="@font-face Format:">woff2</t>
-    <t hangText="Fragment Identifiers">,A string, no longer than 63 characters and restricted to the 
-    printable ASCII subset, codes 33 – 126, except for the 10 characters 
-    '[', ']', '(', ')', '{', '}', '&lt;', '&gt;', '/', '%'. If this string matches one of the PostScript
-    names (name ID=6) <xref target="ISO.14496-22.2015"/> in the name table, that font is selected.
-    For example, <spanx style="verb">#Foo-Bold</spanx> refers to the font with PostScript name Foo-Bold.
-    If the name does not match, or if a fragment is not specified, the first font
-    in the collection is matched (the only font, if the WOFF does not encode a collection). 
-    Note that the order of fonts in collections may change
-    as the font is revised, so relying on a particular font in a collection always being first is unwise.</t>
+    <t hangText="Fragment Identifiers:">See <xref target="fragments"/>.</t>
   </list>
   </t>
 
