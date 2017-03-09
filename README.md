@@ -1,5 +1,7 @@
-# ietf-justfont
-Editor's draft for IETF justfont working group
+# See RFC 8081, IETF Proposed Standard
+https://tools.ietf.org/html/rfc8081
+
+This was the editor's draft for IETF justfont working group, now published as RFC 8081
 
 IETF tracker https://datatracker.ietf.org/doc/draft-ietf-justfont-toplevel/
 
